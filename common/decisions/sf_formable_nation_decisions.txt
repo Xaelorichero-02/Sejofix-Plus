@@ -1,0 +1,492 @@
+form_polynesia_category = {
+	
+	integrate_new_britain_and_new_ireland = {
+		icon = generic_form_nation
+		allowed = {
+			OR = {
+				original_tag = HAW
+				original_tag = TAH
+				original_tag = GUM
+				original_tag = FSM
+				original_tag = SAM
+				original_tag = SOL
+				original_tag = FIJ
+				original_tag = NZL
+				original_tag = RAP
+				
+			}
+	    }
+		available = {
+			OR = {
+				is_subject = no
+				has_autonomy_state = autonomy_dominion #New Zealand should be able to do it
+			}
+			controls_state = 737 #Bismarck
+		}
+	
+		visible = {
+			OR = {
+				original_tag = HAW
+				original_tag = TAH
+				original_tag = GUM
+				original_tag = FSM
+				original_tag = SAM
+				original_tag = SOL
+				original_tag = FIJ
+				original_tag = NZL
+				original_tag = RAP
+			}
+			has_global_flag = form_polynesia_flag
+			NOT = {has_global_flag = integrated_bismarck_flag}
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				set_global_flag = integrated_bismarck_flag
+				737 = { add_core_of = ROOT }
+			}
+		}
+	}
+
+	conquer_papua = {
+		icon = generic_form_nation
+		allowed = {
+			OR = {
+				original_tag = HAW
+				original_tag = TAH
+				original_tag = GUM
+				original_tag = FSM
+				original_tag = SAM
+				original_tag = SOL
+				original_tag = FIJ
+				original_tag = NZL
+				original_tag = RAP
+			}
+	    }
+		available = {
+			OR = {
+				is_subject = no
+				has_autonomy_state = autonomy_dominion #New Zealand should be able to do it
+			}
+			controls_state = 979 #Kaiser-Wilhelmsland
+			controls_state = 523 #Papua
+			controls_state = 669 #West Papua
+		}
+	
+		visible = {
+			OR = {
+				original_tag = HAW
+				original_tag = TAH
+				original_tag = GUM
+				original_tag = FSM
+				original_tag = SAM
+				original_tag = SOL
+				original_tag = FIJ
+				original_tag = NZL
+				original_tag = RAP
+			}
+			has_global_flag = integrated_bismarck_flag
+			NOT = {has_global_flag = conquered_papua_flag}
+		}
+	
+		complete_effect = {
+			hidden_effect = {
+				set_global_flag = conquered_papua_flag
+				523 = { add_core_of = ROOT }
+				669 = { add_core_of = ROOT }
+				979 = { add_core_of = ROOT }
+			}
+		}
+	}
+
+	conquer_okinawa = {
+		icon = generic_form_nation
+		allowed = {
+			OR = {
+				original_tag = HAW
+				original_tag = TAH
+				original_tag = GUM
+				original_tag = FSM
+				original_tag = SAM
+				original_tag = SOL
+				original_tag = FIJ
+				original_tag = NZL
+				original_tag = RAP
+				original_tag = PNG
+			}
+	    }
+		available = {
+			OR = {
+				is_subject = no
+				has_autonomy_state = autonomy_dominion #New Zealand should be able to do it
+			}
+			controls_state = 526 #Okinawa
+		}
+
+		visible = {
+			OR = {
+				original_tag = HAW
+				original_tag = TAH
+				original_tag = GUM
+				original_tag = FSM
+				original_tag = SAM
+				original_tag = SOL
+				original_tag = FIJ
+				original_tag = NZL
+				original_tag = RAP
+				original_tag = PNG
+			}
+			has_global_flag = form_polynesia_flag
+			NOT = {has_global_flag = conquered_okinawa_flag}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_global_flag = conquered_okinawa_flag
+				526 = { add_core_of = ROOT }
+			}
+		}
+	}
+}
+
+antilles_category = {
+	integrate_bermuda = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = HAI # Haiti
+				original_tag = DOM # Dominican Republic
+				original_tag = PUE # Puerto Rico
+				original_tag = CUB # Cuba
+				original_tag = JAM # Jamaica
+				original_tag = BAH # Bahamas
+				original_tag = GDL # Guadeloupe 
+				original_tag = BAS # British Antilles 
+			        original_tag = CRC # Dutch Antilles Literally Dutch Antilles
+				original_tag = TRI # Trinidad and Tobago
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = HAI # Haiti
+				original_tag = DOM # Dominican Republic
+				original_tag = PUE # Puerto Rico
+				original_tag = CUB # Cuba
+				original_tag = JAM # Jamaica
+				original_tag = BAH # Bahamas
+				original_tag = GDL # Guadeloupe 
+				original_tag = BAS # British Antilles 
+			        original_tag = CRC # Dutch Antilles Literally Dutch Antilles
+				original_tag = TRI # Trinidad and Tobago
+			}
+			
+			has_global_flag = antilles_formed_flag
+			NOT = { has_global_flag = integrated_bermuda_flag }
+			
+		}
+
+		available = {
+			
+			696 = {
+				is_fully_controlled_by = ROOT
+			}
+
+		}
+
+		complete_effect = {
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			# Bermuda
+			IF =  {
+				limit = {
+					NOT = {
+						696 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				696 = { add_core_of = ROOT }
+			}
+
+			hidden_effect = {
+				set_global_flag = integrated_bermuda_flag
+			}
+		}
+
+		ai_will_do = {
+			base = 2000
+		}
+	}
+}
+
+west_africa_category = {
+
+	form_west_africa = {
+		icon = generic_form_nation
+		on_map_mode = decision_view_only
+		allowed = {
+			OR = {
+				original_tag = NGA
+				original_tag = NGR
+				original_tag = TOG
+				original_tag = DAH
+				original_tag = GHA
+				original_tag = IVO
+				original_tag = LIB
+				original_tag = SIE
+				original_tag = GNA
+				original_tag = GNB
+				original_tag = SEN
+				original_tag = GAM
+				original_tag = MRT
+				original_tag = VOL
+				original_tag = MLI
+				original_tag = BIA
+				original_tag = SOK
+				original_tag = CBV
+			}
+		}
+		available = {
+			is_subject = no
+			controls_state = 900 #Benue
+			controls_state = 558 #Lagos
+			controls_state = 776 #Dahomey
+			controls_state = 777 #Togo
+			controls_state = 274 #Ghana
+			controls_state = 779 #Ivory Coast
+			controls_state = 298 #Liberia
+			controls_state = 700 #Sierra Leone
+			controls_state = 780 #Guinea
+			controls_state = 296 #Portuguese Guinea
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 900 #Benue
+				state = 558 #Lagos
+				state = 776 #Dahomey
+				state = 777 #Togo
+				state = 274 #Ghana
+				state = 779 #Ivory Coast
+				state = 298 #Liberia
+				state = 700 #Sierra Leone
+				state = 780 #Guinea
+				state = 296 #Portuguese Guinea
+			}
+		}
+		visible = {
+			OR = {
+				original_tag = NGA
+				original_tag = NGR
+				original_tag = TOG
+				original_tag = DAH
+				original_tag = GHA
+				original_tag = IVO
+				original_tag = LIB
+				original_tag = SIE
+				original_tag = GNA
+				original_tag = GNB
+				original_tag = SEN
+				original_tag = GAM
+				original_tag = MRT
+				original_tag = VOL
+				original_tag = MLI
+				original_tag = BIA
+				original_tag = SOK
+				original_tag = CBV
+			}
+			NOT = {has_global_flag = form_west_africa_flag }
+		}
+		complete_effect = {
+			#set_cosmetic_tag = WAFR_UNIFIED
+			900 = { add_core_of = ROOT }
+			558 = { add_core_of = ROOT }
+			776 = { add_core_of = ROOT }
+			777 = { add_core_of = ROOT }
+			274 = { add_core_of = ROOT }
+			779 = { add_core_of = ROOT }
+			298 = { add_core_of = ROOT }
+			700 = { add_core_of = ROOT }
+			780 = { add_core_of = ROOT }
+			296 = { add_core_of = ROOT }
+			hidden_effect = {
+				set_global_flag = form_west_africa_flag
+			}
+		}
+		ai_will_do = {
+			base = 420
+		}
+	}
+			
+	integrate_west_sahel = {
+		icon = generic_form_nation
+		on_map_mode = decision_view_only
+		allowed = {
+            OR = {
+				original_tag = NGA
+				original_tag = NGR
+				original_tag = TOG
+				original_tag = DAH
+				original_tag = GHA
+				original_tag = IVO
+				original_tag = LIB
+				original_tag = SIE
+				original_tag = GNA
+				original_tag = GNB
+				original_tag = SEN
+				original_tag = GAM
+				original_tag = MRT
+				original_tag = VOL
+				original_tag = MLI
+				original_tag = BIA
+				original_tag = SOK
+				original_tag = CBV
+			}
+		}
+		available = {
+			is_subject = no
+			controls_state = 901 #Borno
+			controls_state = 902 #Sokoto
+			controls_state = 781 #Niger
+			controls_state = 898 #Gao
+			controls_state = 778 #Upper Volta
+			controls_state = 556 #Bamako
+			controls_state = 899 #Kayes-Koulikoro
+			controls_state = 557 #Mauritania
+			controls_state = 272 #Senegal
+			controls_state = 701 #Gambia
+		}
+			
+		highlight_states = {
+			highlight_state_targets = {
+				state = 901 #Borno
+				state = 902 #Sokoto
+				state = 781 #Niger
+				state = 898 #Gao
+				state = 778 #Upper Volta
+				state = 556 #Bamako
+				state = 899 #Kayes-Koulikoro
+				state = 557 #Mauritania
+				state = 272 #Senegal
+				state = 701 #Gambia
+			}
+		}
+
+		visible = {		
+			has_global_flag = form_west_africa_flag
+			OR = {
+				original_tag = NGA
+				original_tag = NGR
+				original_tag = TOG
+				original_tag = DAH
+				original_tag = GHA
+				original_tag = IVO
+				original_tag = LIB
+				original_tag = SIE
+				original_tag = GNA
+				original_tag = GNB
+				original_tag = SEN
+				original_tag = GAM
+				original_tag = MRT
+				original_tag = VOL
+				original_tag = MLI
+				original_tag = BIA
+				original_tag = SOK
+				original_tag = CBV
+			}
+			NOT = { has_global_flag = integrated_west_sahel_flag }
+		}
+		complete_effect = {
+			901 = { add_core_of = ROOT }
+			902 = { add_core_of = ROOT }
+			781 = { add_core_of = ROOT }
+			898 = { add_core_of = ROOT }
+			778 = { add_core_of = ROOT }
+			556 = { add_core_of = ROOT }
+			899 = { add_core_of = ROOT }
+			557 = { add_core_of = ROOT }
+			272 = { add_core_of = ROOT }
+			701 = { add_core_of = ROOT }
+			515 = { add_core_of = ROOT } #Southern Sahara (Niger)
+			782 = { add_core_of = ROOT } #Tombouctou
+			786 = { add_core_of = ROOT } #Mauritanian Desert
+			hidden_effect = {
+				set_global_flag = integrated_west_sahel_flag
+			}
+		}
+		ai_will_do = {
+			base = 420
+		}
+	}
+
+	conquer_cape_verde = {
+		icon = generic_form_nation
+		on_map_mode = decision_view_only
+		allowed = {
+			OR = {
+				original_tag = NGA
+				original_tag = NGR
+				original_tag = TOG
+				original_tag = DAH
+				original_tag = GHA
+				original_tag = IVO
+				original_tag = LIB
+				original_tag = SIE
+				original_tag = GNA
+				original_tag = GNB
+				original_tag = SEN
+				original_tag = GAM
+				original_tag = MRT
+				original_tag = VOL
+				original_tag = MLI
+				original_tag = BIA
+				original_tag = SOK
+			}
+		}
+		available = {
+			is_subject = no
+			controls_state = 702 #Cape Verde duh
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 702 #Cape Verde
+			}
+		}
+		visible = {
+			NOT = { has_global_flag = conquered_cape_verde_flag }
+			has_global_flag = form_west_africa_flag
+			OR = {
+				original_tag = NGA
+				original_tag = NGR
+				original_tag = TOG
+				original_tag = DAH
+				original_tag = GHA
+				original_tag = IVO
+				original_tag = LIB
+				original_tag = SIE
+				original_tag = GNA
+				original_tag = GNB
+				original_tag = SEN
+				original_tag = GAM
+				original_tag = MRT
+				original_tag = VOL
+				original_tag = MLI
+				original_tag = BIA
+				original_tag = SOK
+			}
+		}
+		complete_effect = {
+			702 = { add_core_of = ROOT } #Disneyland
+			hidden_effect = {
+				set_global_flag = conquered_cape_verde_flag
+			}
+		}
+		
+		ai_will_do = {
+			factor = 420
+		}
+	}
+}

@@ -1,0 +1,187 @@
+###########################
+# Sejofix Turkish Events
+###########################
+
+add_namespace = sf_turkey
+
+#Defense of the Gulf - the British Accept, and Kuwait is offered Annexation, Subjegation or War yeah my generic coding sucks, cry about it
+country_event = {
+	id = sf_turkey.1
+	title = sf_turkey.1.t
+	desc = sf_turkey.1.d
+	picture = GFX_report_event_tur_military_affair
+	is_triggered_only = yes
+
+	option = {
+		name = sf_turkey.1.a
+		ai_chance = { base = 75 }
+		custom_effect_tooltip = GAME_OVER_TT
+		TUR = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+	}
+
+	option = {
+		ai_chance = { base = 25 }
+		name = sf_turkey.1.b
+		TUR = { puppet = ROOT }
+	}
+
+	option = {
+		name = sf_turkey.1.c
+		ai_chance = {
+			base = 50
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		effect_tooltip = {
+			set_autonomy = {
+				target = KUW
+				autonomy_state = autonomy_free
+			}
+			leave_faction = yes
+			ENG = {
+				create_wargoal = {
+					target = ROOT
+					type = annex_everything
+				}
+			}
+		}
+		hidden_effect = {
+			leave_faction = yes
+			ENG = {
+				set_country_flag = TUR_traitor_of_britain_kuw
+				country_event = { id = sf_turkey.3 hours = 24 }
+				create_wargoal = {
+					target = KUW
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+#Defense of the Gulf - the British Accept, and Oman is offered Annexation, Subjegation or War
+country_event = {
+	id = sf_turkey.2
+	title = sf_turkey.2.t
+	desc = sf_turkey.2.d
+	picture = GFX_report_event_tur_military_affair
+	is_triggered_only = yes
+
+	option = {
+		name = sf_turkey.2.a
+		ai_chance = { base = 75 }
+		custom_effect_tooltip = GAME_OVER_TT
+		TUR = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+	}
+
+	option = {
+		ai_chance = { base = 25 }
+		name = sf_turkey.2.b
+		TUR = {
+			puppet = ROOT
+		}
+	}
+	option = {
+		name = sf_turkey.2.c
+		ai_chance = {
+			base = 50
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		effect_tooltip = {
+			ROOT = {
+				set_autonomy = {
+					target = OMA
+					autonomy_state = autonomy_free
+				}
+			}
+			leave_faction = yes
+			ENG = {
+				create_wargoal = {
+					target = ROOT
+					type = annex_everything
+				}
+			}
+		}
+		hidden_effect = { 
+			leave_faction = yes
+			ENG = {
+				set_country_flag = TUR_traitor_of_britain_oma
+				country_event = {
+					id = sf_turkey.4
+					hours = 24
+				}
+				create_wargoal = {
+					target = OMA
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sf_turkey.3
+	hidden = yes
+	is_triggered_only = yes
+	trigger = {
+		original_tag = ENG
+		has_country_flag = TUR_traitor_of_britain_kuw
+	}
+	immediate = {
+		hidden_effect = {
+			set_autonomy = {
+				target = KUW
+				autonomy_state = autonomy_free
+			}
+		}
+	}
+	option = {
+		hidden_effect = {
+			set_autonomy = {
+				target = KUW
+				autonomy_state = autonomy_free
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sf_turkey.4
+	hidden = yes
+	is_triggered_only = yes
+	trigger = {
+		original_tag = ENG
+		has_country_flag = TUR_traitor_of_britain_oma
+	}
+	immediate = {
+		hidden_effect = {
+			set_autonomy = {
+				target = OMA
+				autonomy_state = autonomy_free
+			}
+		}
+	}
+	option = {
+		hidden_effect = {
+			set_autonomy = {
+				target = OMA
+				autonomy_state = autonomy_free
+			}
+		}
+	}
+}
