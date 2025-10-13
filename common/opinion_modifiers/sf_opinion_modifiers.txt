@@ -1,0 +1,7 @@
+opinion_modifiers = {
+
+	FRA_ban_communism_om = {
+		value = -25
+	}
+
+}
