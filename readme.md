@@ -7,3 +7,4 @@
  - Added West African formable.
  - Added more expansion for Polynesian and Antilles formables.
  - Reworked French communism ban.
+ - All focuses creating a faction now allow countries to make factions.
