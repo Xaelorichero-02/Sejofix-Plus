@@ -1,0 +1,17 @@
+on_action = {
+	
+	on_war = {
+
+		effect = {
+			#Shadow Scheme Factories
+			if = {
+				limit = {
+					has_completed_focus = shadow_scheme_focus
+				}
+				country_event = { id = britain.24 hours = 4 }
+			}
+		}
+
+	}
+
+}

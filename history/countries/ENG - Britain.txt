@@ -220,6 +220,7 @@ if = {
 	limit = {
 		has_start_date < 1939.1.1
 	}
+	country_event = { id = britain.10 days = 1775 } # Chamberlain Dead
 	country_event = { id = britain.16 days = 20 } # George V Dead
 	country_event = { id = britain.22 days = 513 } # George V Dead
 	if = {
@@ -228,6 +229,13 @@ if = {
 		}
 		country_event = { id = britain.17 days = 346 } # Edward VIII Abdication
 	}
+}
+
+if = {
+	limit = {
+		has_start_date > 1939.1.1
+	}
+	country_event = { id = britain.10 days = 454 } # Chamberlain Dead
 }
 
 set_convoys = 1000

@@ -12,7 +12,7 @@ country_event = {
 	
 	option = {
 		name = britain.1.a	#sounds good
-		ai_chance = { factor = 90 }
+		ai_chance = { base = 90 }
 		add_political_power = -10
 		ENG = {
 			country_event = { days = 1 id = britain.2 }
@@ -35,7 +35,7 @@ country_event = {
 	
 	option = {
 		name = britain.1.b	#no way 
-		ai_chance = { factor = 10 }
+		ai_chance = { base = 10 }
 		#add_opinion_modifier = { target = ENG modifier = tizard_refused }
 		ENG = {
 			country_event = { days = 1 id = britain.3 }
@@ -45,7 +45,7 @@ country_event = {
 	option = {
 		name = britain.1.c	#tech_sharing
 		trigger = { has_dlc = "Together for Victory"}
-		ai_chance = { factor = 90 }
+		ai_chance = { base = 90 }
 		add_political_power = -10
 		ENG = {
 			country_event = { days = 1 id = britain.21 }
@@ -144,7 +144,7 @@ country_event = {
 		tag = ENG
 		has_global_flag = indian_independence_promised
 		NOT = { has_idea = indian_independence_promised_idea }
-		RAJ = { is_puppet_of = ENG }
+		RAJ = { is_subject_of = ENG }
 	}
 	
 	mean_time_to_happen = {
@@ -176,14 +176,14 @@ country_event = {
 	
 	option = {
 		name = britain.7.a
-		ai_chance = { factor = 60 }
+		ai_chance = { base = 60 }
 		GER = {
 				add_opinion_modifier = { target = ROOT modifier = embargo } 
 			}
 	}
 	option = {
 		name = britain.7.b
-		ai_chance = { factor = 40 }
+		ai_chance = { base = 40 }
 		ENG = {
 			country_event = britain.8
 		}
@@ -200,7 +200,7 @@ country_event = {
 	
 	option = {
 		name = britain.8.a
-		ai_chance = { factor = 70 }
+		ai_chance = { base = 70 }
 		create_wargoal = {
 				type = take_state
 				target = FROM
@@ -221,7 +221,7 @@ country_event = {
 	}
 	option = {
 		name = britain.8.b
-		ai_chance = { factor = 30 }
+		ai_chance = { base = 30 }
 	}
 }
 
@@ -263,7 +263,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 2
+		days = 14
 	}
 
 	immediate = { set_country_flag = chamberlain_resigned }
@@ -274,7 +274,6 @@ country_event = {
 		retire_character = ENG_neville_chamberlain
 		add_stability = 0.1
 		add_war_support = 0.1
-
 	}
 }
 
@@ -288,27 +287,16 @@ country_event = {
 
 	fire_only_once = yes
 
-	trigger = {
-		tag = ENG
-		has_government = democratic
-		date > 1940.9.11
-		NOT = { has_country_flag = chamberlain_resigned }
-		has_country_leader = {
-			character = ENG_neville_chamberlain
-			ruling_only = yes
-		}
-	}	
-
-	mean_time_to_happen = {
-		days = 30
-	}
-	
 	immediate = { set_country_flag = chamberlain_died }
 
 	option = {
 		name = britain.10.a
 		trigger = { #MM: This option should not appear if Churchill is not in the country - GoE content if he is transferred to India via event chain triggered by focus RAJ_the_jewel_becomes_the_crown
 			has_character = ENG_winston_churchill
+			has_country_leader = {
+				character = ENG_neville_chamberlain
+				ruling_only = yes
+			}
 		}
 		effect_tooltip = {
 			kill_country_leader = yes
@@ -323,6 +311,12 @@ country_event = {
 	}
 	option = {
 		name = britain.10.b
+		trigger = {
+			has_country_leader = {
+				character = ENG_neville_chamberlain
+				ruling_only = yes
+			}
+		}
 		effect_tooltip = {
 			kill_country_leader = yes
 		}
@@ -340,6 +334,20 @@ country_event = {
 				cautious_arbiter
 			}
 		}
+	}
+	option = {
+		name = britain.10.c
+		trigger = {
+			NOT = {
+				has_country_leader = {
+					character = ENG_neville_chamberlain
+					ruling_only = yes
+				}
+			}
+		}
+		#hidden_effect = {
+			#retire_character = ENG_neville_chamberlain
+		#}
 	}
 }
 
@@ -359,28 +367,28 @@ country_event = {
 		name = britain.11.a
 		add_war_support = 0.1
 		every_other_country = {
-				limit = {
-					NOT = { has_war_with = ENG }
-					is_in_faction = no
-					has_government = democratic
-					is_puppet = no
-					OR = {
-						capital_scope = {
-								is_on_continent = europe
-						}
-						capital_scope = {
-								is_on_continent = asia
-						}
-						num_of_factories > 30
+			limit = {
+				NOT = { has_war_with = ENG }
+				is_in_faction = no
+				has_government = democratic
+				is_puppet = no
+				OR = {
+					capital_scope = {
+						is_on_continent = europe
 					}
+					capital_scope = {
+						is_on_continent = asia
+					}
+					num_of_factories > 30
 				}
-				country_event = britain.12
 			}
+			country_event = britain.12
+		}
 	}
 	
 	option = {
 		name = britain.11.b
-		ai_chance = { factor = 0 }
+		ai_chance = { base = 0 }
 	}
 }
 
@@ -408,7 +416,7 @@ country_event = {
 	
 	option = {
 		name = britain.12.b
-		ai_chance = { factor = 0 }
+		ai_chance = { base = 0 }
 	}
 }
 
@@ -431,7 +439,7 @@ country_event = {
 				value = 200
 			}
 		}
-		FROM = { country_event = { id = france.29} }
+		FROM = { country_event = { id = france.29 } }
 		hidden_effect = {
 			news_event = { id = news.175 }
 		}
@@ -439,7 +447,7 @@ country_event = {
 	
 	option = {
 		name = britain.13.b
-		ai_chance = { factor = 0 }
+		ai_chance = { base = 0 }
 		FROM = { 
 			add_opinion_modifier = {
 				target = ROOT
@@ -465,7 +473,7 @@ country_event = {
 	option = { # Abandon Yugoalvia
 		name = britain.14.a
 		ai_chance = { 
-			factor = 90 
+			base = 90 
 			modifier = {
 				has_war_with = GER
 				factor = 0
@@ -522,7 +530,7 @@ country_event = {
 	option = { # Support Yugoslavia
 		name = britain.14.b
 		ai_chance = {
-			factor = 10
+			base = 10
 			modifier = {
 				factor = 0
 				is_in_faction_with = GER
@@ -626,18 +634,9 @@ country_event = {
 	title = britain.17.t
 	desc = britain.17.d
 	picture = GFX_report_event_generic_sign_treaty2
-	
-	#trigger = {
-	#	tag = ENG
-	#	has_country_flag = ENG_king_died
-	#	date > 1936.12.1
-	#	NOT = { has_dlc = "Man the Guns" }
-	#}
-	
+
 	fire_only_once = yes
 
-	#mean_time_to_happen = { days = 14 }
-	
 	immediate = {
 		hidden_effect = {
 			remove_ideas = ENG_king_edward
@@ -859,7 +858,7 @@ country_event = {
 	#side with government
 	option = {
 		ai_chance = {
-			factor = 100
+			base = 100
 			modifier = {
 				has_government = fascism
 				factor = 0
@@ -867,17 +866,17 @@ country_event = {
 		}
 		name = britain.23.a
 		start_civil_war = {
-				ideology = fascism
-				size = 0.5
+			ideology = fascism
+			size = 0.5
 		}
 	}
 	#side with fascists
 	option = {
 		name = britain.23.b
 		start_civil_war = {
-				ruling_party = fascism
-				ideology = neutrality
-				size = 0.5
+			ruling_party = fascism
+			ideology = neutrality
+			size = 0.5
 		}
 		random_other_country = {
 			limit = {
@@ -898,16 +897,6 @@ country_event = {
     picture = GFX_report_event_generic_factory
  
     fire_only_once = yes
- 
-    trigger = {
-        original_tag = ENG
-        has_completed_focus = shadow_scheme_focus
-        has_war = yes
-    }
-
-    mean_time_to_happen = {
-        days = 7
-    }
 
     option = {
         name = britain.24.a
@@ -1154,7 +1143,7 @@ country_event = {
 	}
 	option = {
 		name = AAT_britain_narvik.1.a	#sounds good
-		ai_chance = { factor = 95 }
+		ai_chance = { base = 95 }
 		white_peace = { tag = SWE }
 
 		if = {
@@ -1181,7 +1170,7 @@ country_event = {
 	
 	option = {
 		name = AAT_britain_narvik.1.b	#no way 
-		ai_chance = { factor = 5 }
+		ai_chance = { base = 5 }
 		add_political_power = -150
 		add_stability = -0.35
 		add_war_support = -0.35
