@@ -147,10 +147,6 @@ country_event = {
 		RAJ = { is_subject_of = ENG }
 	}
 	
-	mean_time_to_happen = {
-		days = 30
-	}
-	
 	option = {
 		name = britain.6.a
 		end_puppet = RAJ
@@ -829,10 +825,6 @@ country_event = {
             character = ENG_stanley_baldwin
             ruling_only = yes
         }
-    }
-
-    mean_time_to_happen = {
-        days = 28
     }
 
 	option = {

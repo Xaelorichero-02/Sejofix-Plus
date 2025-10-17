@@ -240,7 +240,7 @@ country_event = {
 			}
 		}
 	}
-	mean_time_to_happen = { days = 2 }
+	mean_time_to_happen = { days = 3 }
 	immediate = {
 		country_event = france.10
 	}
@@ -1391,17 +1391,6 @@ country_event = {
 
 	fire_only_once = yes
 
-	trigger = {
-		original_tag = FRA
-		16 = { controller = { NOT = { original_tag = FRA } } }
-		has_capitulated = yes
-		#16 = { is_owned_by = FRA }
-	}
-	
-	mean_time_to_happen = {
-		days = 4
-	}
-
 	option = {
 		name = france.16.a
 		remove_ideas = FRA_victors_of_wwi
@@ -1516,7 +1505,7 @@ country_event = {
 
 	fire_only_once = yes
 	
-	mean_time_to_happen = {	days = 60 }
+	mean_time_to_happen = {	months = 3 }
 
 	option = {
 		ai_chance = {
@@ -1585,19 +1574,9 @@ country_event = {
 	desc = france.24.d
 	picture = GFX_report_event_molotov_ribentrop_handshake
 
-	#trigger = {
-	#	tag = FRA
-	#	SOU = { has_government = communism }
-	#	has_government = democratic
-	#	communism < 0.5
-	#	has_global_flag = sov_yes_pact
-	#}
-
 	is_triggered_only = yes
 
 	fire_only_once = yes
-	
-	mean_time_to_happen = {	days = 2 }
 
 	option = {
 		ai_chance = {
@@ -2014,7 +1993,7 @@ country_event = {
 	} 
 
 	mean_time_to_happen = {
-		days = 7
+		days = 14
 	}
 
 	option = {
@@ -2098,10 +2077,6 @@ country_event = {
 		any_owned_state = {
 			is_core_of = FRA
 		}
-	}
-	
-	mean_time_to_happen = {
-		months = 1
 	}
 
 	option = { # Release

@@ -3,12 +3,28 @@ on_action = {
 	on_war = {
 
 		effect = {
-			#Shadow Scheme Factories
+			#ENG: Shadow Scheme Factories
 			if = {
 				limit = {
 					has_completed_focus = shadow_scheme_focus
 				}
 				country_event = { id = britain.24 hours = 4 }
+			}
+		}
+
+	}
+
+	on_state_control_changed = {
+		
+		effect = {
+			#FRA: Stay Together, Stay Strong! Event Trigger
+			if = {
+				limit = {
+					original_tag = FRA
+					has_capitulated = yes
+					16 = { controller = { NOT = { original_tag = FRA } } }
+				}
+				country_event = { id = france.16 hours = 4 }
 			}
 		}
 
