@@ -396,7 +396,7 @@ country_event = {
 						factor = 2
 					}
 					modifier = {
-						difficulty < 5
+						difficulty > 5
 						factor = 0.6
 					}
 					country_event = lar_france_french_union.2 #accepts
@@ -423,7 +423,7 @@ country_event = {
 						factor = 2
 					}
 					modifier = {
-						difficulty < 5
+						difficulty > 5
 						factor = 0.6
 					}
 					country_event = lar_france_french_union.4 #accepts
@@ -450,7 +450,7 @@ country_event = {
 						factor = 2
 					}
 					modifier = {
-						difficulty < 5
+						difficulty > 5
 						factor = 0.6
 					}
 					country_event = lar_france_french_union.6 #accepts
@@ -477,7 +477,7 @@ country_event = {
 						factor = 2
 					}
 					modifier = {
-						difficulty < 5
+						difficulty > 5
 						factor = 0.6
 					}
 					country_event = lar_france_french_union.8 #accepts
@@ -504,7 +504,7 @@ country_event = {
 						factor = 2
 					}
 					modifier = {
-						difficulty < 5
+						difficulty > 5
 						factor = 0.6
 					}
 					country_event = lar_france_french_union.10 #accepts
