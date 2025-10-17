@@ -8587,7 +8587,7 @@ form_majapahit_empire_category = {
 			
 			# Dutch East Indies
 			custom_trigger_tooltip = {
-				tooltip = form_majapahit_nei_required_states_tt
+				tooltip = form_majapahit_nei_required_states_2_tt
 				controls_state = 672
 				controls_state = 335
 				controls_state = 334
@@ -8596,7 +8596,6 @@ form_majapahit_empire_category = {
 				controls_state = 668
 				controls_state = 667
 				controls_state = 738
-				controls_state = 669
 			}
 			# British Malaya
 			custom_trigger_tooltip = {
@@ -8617,7 +8616,7 @@ form_majapahit_empire_category = {
 		complete_effect = {
 			set_cosmetic_tag = MAJ_UNIFIED
 			# Dutch East Indies
-			custom_effect_tooltip = form_country_nei_coring_states_tt
+			custom_effect_tooltip = form_country_nei_coring_states_2_tt
 			hidden_effect = {
 				672 = { add_core_of = ROOT }
 				335 = { add_core_of = ROOT }
@@ -8627,7 +8626,6 @@ form_majapahit_empire_category = {
 				668 = { add_core_of = ROOT }
 				667 = { add_core_of = ROOT }
 				738 = { add_core_of = ROOT }
-				669 = { add_core_of = ROOT }
 			}
 			# British Malaya
 			custom_effect_tooltip = form_country_malaya_coring_states_tt
@@ -8659,6 +8657,7 @@ form_majapahit_empire_category = {
 			highlight_state_targets = {
 				state = 523
 				state = 979
+				state = 669
 			}
 		}
 
@@ -8675,6 +8674,7 @@ form_majapahit_empire_category = {
 		available = {
 			controls_state = 523
 			controls_state = 979
+			controls_state = 669
 		}
 
 		visible = {
@@ -8688,6 +8688,7 @@ form_majapahit_empire_category = {
 		complete_effect = {
 			523 = { add_core_of = ROOT }
 			979 = { add_core_of = ROOT }
+			669 = { add_core_of = ROOT }
 		}
 
 		ai_will_do = {
