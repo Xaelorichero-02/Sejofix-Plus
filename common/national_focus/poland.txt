@@ -4109,8 +4109,6 @@ focus_tree = {
 					infantry = { x = 0 y = 2 }
 					infantry = { x = 0 y = 3 }
 				}
-				support = {
-				}
 			}
 			random_owned_controlled_state = {
 				prioritize = { 95 }
@@ -4156,8 +4154,6 @@ focus_tree = {
 					infantry = { x = 0 y = 1 }
 					infantry = { x = 0 y = 2 }
 					infantry = { x = 0 y = 3 }
-				}
-				support = {
 				}
 			}
 			random_owned_controlled_state = {
@@ -4576,8 +4572,6 @@ focus_tree = {
 			factor = 10
 		}
 
-		
-		search_filters = {  } 
 		completion_reward = {
 			custom_effect_tooltip = sabotaged_industry_tt
 			#will trigger an event each time a Polish state is occupied by the enemy that sabotages industry
@@ -6202,13 +6196,11 @@ focus_tree = {
 				limit = {
 					SOU = {					
 						NOT = {
-							OR = {
-								focus_progress = { 
-									focus = SOV_the_left_opposition
-									progress > 0	
-								}
-								has_completed_focus = SOV_the_left_opposition
-							} 
+							focus_progress = { 
+								focus = SOV_the_left_opposition
+								progress > 0	
+							}
+							has_completed_focus = SOV_the_left_opposition
 						}
 					}
 				}
@@ -7292,8 +7284,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 2.5
 		}
-
-		available_if_capitulated = no
 		available = { NOT = { has_government = fascism } }
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -7346,7 +7336,6 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		search_filters = {  }
 		completion_reward = {
 			add_ideas = { POL_committee_of_national_liberation_idea }
 		}
@@ -7862,8 +7851,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 2.5
 		}
-
-		available_if_capitulated = no
 		
 		available = {
 			has_country_leader = {
@@ -8214,8 +8201,6 @@ focus_tree = {
 			has_capitulated = yes
 		}
 
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_ideas = { POL_royal_guard }
@@ -8319,8 +8304,6 @@ focus_tree = {
 				}
 			}
 		}
-
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -8519,8 +8502,6 @@ focus_tree = {
 		bypass = {
 		}
 
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			66 = { add_core_of = ROOT }
@@ -8575,8 +8556,6 @@ focus_tree = {
 		
 		bypass = {
 		}
-
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -8641,8 +8620,6 @@ focus_tree = {
 		bypass = {
 		}
 
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			random_owned_state = {
@@ -8702,8 +8679,6 @@ focus_tree = {
 		
 		bypass = {
 		}
-
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -8777,12 +8752,9 @@ focus_tree = {
 			effect_tooltip = {
 				create_country_leader = {
 					name = "Michał II"
-					desc = "POLITICS_MICHAEL_I_DESC"
 					picture = GFX_portrait_Michał_II
 					expire = "1965.1.1"
 					ideology = despotism
-					traits = {
-					}
 				}
 			}
 		}
@@ -8982,8 +8954,6 @@ focus_tree = {
 				}
 			}
 		}
-
-		available_if_capitulated = no
 		
 		available = {
 			is_subject = no 
@@ -9545,8 +9515,6 @@ focus_tree = {
 			factor = 2.5
 		}
 
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_ideas = POL_slavic_revanchism
@@ -9581,8 +9549,6 @@ focus_tree = {
 				}
 			}
 		}
-
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
@@ -9652,8 +9618,6 @@ focus_tree = {
 			}
 		}
 
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			create_wargoal = {
@@ -9720,16 +9684,14 @@ focus_tree = {
 						AND = {
 							is_core_of = SOV
 							NOT = {
-								OR = {
-									is_core_of = AZR
-									is_core_of = GEO
-									is_core_of = ARM
-									is_core_of = TMS
-									is_core_of = UZB
-									is_core_of = KAZ
-									is_core_of = TAJ
-									is_core_of = KYR
-								}
+								is_core_of = AZR
+								is_core_of = GEO
+								is_core_of = ARM
+								is_core_of = TMS
+								is_core_of = UZB
+								is_core_of = KAZ
+								is_core_of = TAJ
+								is_core_of = KYR
 							}
 						}
 						is_core_of = YUG
@@ -10009,8 +9971,6 @@ focus_tree = {
 			}
 		}
 
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			if = {
@@ -10072,8 +10032,6 @@ focus_tree = {
 		bypass = {
 			has_global_flag = form_commonwealth_flag
 		}
-
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
@@ -10510,8 +10468,6 @@ focus_tree = {
 			has_government = neutrality
 		}
 
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			if = {
@@ -10567,8 +10523,6 @@ focus_tree = {
 			763 = { is_core_of = ROOT }
 		}
 
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			5 = {
@@ -10596,8 +10550,6 @@ focus_tree = {
 		
 		available = {
 		}
-
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
@@ -11564,8 +11516,6 @@ focus_tree = {
 			factor = 2.5
 		}
 
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			effect_tooltip = {
@@ -11605,8 +11555,6 @@ focus_tree = {
 			fascism > 0.5
 			is_subject = no 
 		}
-
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -11696,8 +11644,6 @@ focus_tree = {
 			is_subject = yes
 			has_government = fascism
 		}
-
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
@@ -12267,8 +12213,6 @@ focus_tree = {
 			is_in_faction_with = SPR
 		}
 
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
@@ -12402,8 +12346,6 @@ focus_tree = {
 			is_subject = no 
 			has_country_leader_ideology = falangism
 		}
-
-		available_if_capitulated = no
 		
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -12517,8 +12459,6 @@ focus_tree = {
 			is_subject = no 
 			has_country_leader_ideology = falangism
 		}
-
-		available_if_capitulated = no
 		
 		select_effect = { #Determine countries to be valid when the focus starts. Avoid fustration with Belgium dipping to 19 fascist support or something.
 			every_other_country = {
@@ -12566,8 +12506,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 2.5
 		}
-
-		available_if_capitulated = no
 		
 		available = {
 			is_subject = no 
@@ -12764,8 +12702,6 @@ focus_tree = {
 			}
 		}
 
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			if = {
@@ -12890,8 +12826,6 @@ focus_tree = {
 		bypass = {
 			has_war_with = GER
 		}
-
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -14670,7 +14604,7 @@ focus_tree = {
 			factor = 10
 		}
 		available_if_capitulated = yes
-		search_filters = {  }
+
 		completion_reward = {
 			add_ideas = { POL_expand_intelligence_idea }
 			custom_effect_tooltip = available_political_advisor
@@ -14709,7 +14643,7 @@ focus_tree = {
 			factor = 10
 		}
 		available_if_capitulated = yes
-		search_filters = {  }
+
 		completion_reward = {
 			add_ideas = { POL_expand_intelligence_idea }
 			custom_effect_tooltip = available_political_advisor
@@ -14744,7 +14678,7 @@ focus_tree = {
 			factor = 10
 		}
 		available_if_capitulated = yes
-		search_filters = {  }
+
 		completion_reward = {
 			gain_random_agency_upgrade = yes
 			custom_effect_tooltip = unlock_warsaw_uprising_tt
@@ -14780,7 +14714,7 @@ focus_tree = {
 			factor = 10
 		}
 		available_if_capitulated = yes
-		search_filters = {  }
+
 		completion_reward = {
 			gain_random_agency_upgrade = yes
 			custom_effect_tooltip = unlock_warsaw_uprising_tt
