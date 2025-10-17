@@ -3207,7 +3207,7 @@ focus_tree = {
 		icon = GFX_focus_BUL_the_peoples_republic_of_bulgaria
 		relative_position_id = BUL_overthrow_the_tsar
 		x = 0
-		y = 2
+		y = 1
 		cost = 10
 
 		available = {
@@ -4904,7 +4904,7 @@ focus_tree = {
 		icon = GFX_goal_generic_improve_relations
 		relative_position_id = BUL_democratic_principles
 		x = -1
-		y = 2
+		y = 1
 		cost = 10
 		mutually_exclusive = { focus = BUL_seek_cooperation_with_the_tsar }
 
@@ -5135,7 +5135,7 @@ focus_tree = {
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		relative_position_id = BUL_democratic_principles
 		x = 1
-		y = 2
+		y = 1
 		cost = 10
 		mutually_exclusive = { focus = BUL_legalize_the_agrarian_party }
 
@@ -5342,7 +5342,7 @@ focus_tree = {
 		icon = GFX_focus_generic_befriend_greece
 		relative_position_id = BUL_legislative_elections
 		x = -3
-		y = 1
+		y = 2
 		cost = 10
 
 		bypass = {
@@ -5426,7 +5426,7 @@ focus_tree = {
 		icon = GFX_goal_anschluss
 		relative_position_id = BUL_the_salonika_agreement
 		x = 0
-		y = 3
+		y = 2
 		cost = 5
 		mutually_exclusive = { focus = BUL_join_the_allies focus = BUL_the_fate_of_the_balkans }
 
@@ -5471,7 +5471,7 @@ focus_tree = {
 		icon = GFX_focus_chi_british_cooperation
 		relative_position_id = BUL_legislative_elections
 		x = 3
-		y = 1
+		y = 2
 		cost = 10
 
 		bypass = {
@@ -5601,7 +5601,7 @@ focus_tree = {
 		icon = GFX_goal_generic_alliance
 		relative_position_id = BUL_approach_the_united_kingdom
 		x = 0
-		y = 3
+		y = 2
 		cost = 5
 		mutually_exclusive = { focus = BUL_a_balkan_confederation focus = BUL_the_fate_of_the_balkans focus = BUL_join_the_tripartite_pact }
 
@@ -6585,7 +6585,7 @@ focus_tree = {
 		icon = GFX_focus_generic_monarchy_1
 		relative_position_id = BUL_power_to_the_tsar
 		x = -3
-		y = 2
+		y = 1
 		cost = 10
 
 		mutually_exclusive = { focus = BUL_appoint_right_wing_ministers }
@@ -7801,7 +7801,7 @@ focus_tree = {
 		icon = GFX_focus_generic_diplomatic_treaty
 		relative_position_id = BUL_power_to_the_tsar
 		x = 4
-		y = 2
+		y = 1
 		cost = 10
 
 		mutually_exclusive = { focus = BUL_the_tsars_regime }
