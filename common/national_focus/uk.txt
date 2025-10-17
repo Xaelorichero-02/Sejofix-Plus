@@ -1689,13 +1689,6 @@ focus_tree = {
 		icon = GFX_focus_generic_cruiser2
 		x = 3
 		y = 2
-		offset = {
-			x = -1
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
 		relative_position_id = naval_rearmament_focus
 		cost = 10
 		ai_will_do = {
