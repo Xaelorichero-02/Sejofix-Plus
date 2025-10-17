@@ -307,26 +307,28 @@ country_event = {
 
 	option = {
 		name = britain.10.a
-
 		trigger = { #MM: This option should not appear if Churchill is not in the country - GoE content if he is transferred to India via event chain triggered by focus RAJ_the_jewel_becomes_the_crown
 			has_character = ENG_winston_churchill
 		}
-
-		kill_country_leader = yes
-		create_country_leader = {
-			name = "Winston Churchill"
-			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-			picture = GFX_portrait_Winston_Churchill
-			expire = "1965.1.1"
+		effect_tooltip = {
+			kill_country_leader = yes
+		}
+		hidden_effect = {
+			retire_character = ENG_neville_chamberlain
+		}
+		promote_character = {
+			character = ENG_winston_churchill
 			ideology = conservatism
-			traits = {
-				british_bulldog
-			}
 		}
 	}
 	option = {
 		name = britain.10.b
-		kill_country_leader = yes
+		effect_tooltip = {
+			kill_country_leader = yes
+		}
+		hidden_effect = {
+			retire_character = ENG_neville_chamberlain
+		}
 		create_country_leader = {
 			name = "Lord Edward Halifax"
 			desc = "POLITICS_EDWARD_HALIFAX_DESC"
@@ -836,16 +838,10 @@ country_event = {
 
 	option = {
         name = britain.22.a
-        retire_country_leader = yes
-		create_country_leader = {
-        	name = "Neville Chamberlain"
-        	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
-			picture = GFX_portrait_Neville_Chamberlain
-        	expire = "1965.1.1"
-        	ideology = conservatism
-        	traits = {
-        		chamberlain_appeaser rearmer
-        	}
+        retire_character = ENG_stanley_baldwin
+		promote_character = {
+			character = ENG_neville_chamberlain
+			ideology = conservatism
 		}
         set_country_flag = baldwin_resigned
 	}
