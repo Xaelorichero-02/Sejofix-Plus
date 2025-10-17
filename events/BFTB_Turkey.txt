@@ -16,7 +16,7 @@ country_event = {
 	option = {
 		name = bftb_turkey.1.a #we shall support the Turks
 		ai_chance = {
-			factor = 80
+			base = 80
 			modifier = {
 				has_completed_focus = ENG_steady_as_she_goes
 				factor = 20
@@ -39,7 +39,7 @@ country_event = {
 	option = {
 		name = bftb_turkey.1.b #we must not involve ourselves
 		ai_chance = {
-			factor = 20
+			base = 20
 			modifier = {
 				OR = {
 					has_completed_focus = ENG_revisit_colonial_policy
@@ -99,7 +99,7 @@ country_event = {
 	option = {
 		name = bftb_turkey.4.a #we will not tolerate this
 		ai_chance = {
-			factor = 50
+			base = 50
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 100
@@ -117,7 +117,7 @@ country_event = {
 	option = {
 		name = bftb_turkey.4.b #it matters little to us
 		ai_chance = {
-			factor = 50
+			base = 50
 			modifier = {
 				check_variable = { SOV_great_purge_counter > 0 }
 				factor = 0.25
@@ -141,7 +141,7 @@ country_event = {
 	option = {
 		name = bftb_turkey.5.a #then we compromise
 		ai_chance = {
-			factor = 60
+			base = 60
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 100
@@ -158,7 +158,7 @@ country_event = {
 	option = {
 		name = bftb_turkey.5.b #we stand firm against Soviet meddling!
 		ai_chance = {
-			factor = 40
+			base = 40
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 0
@@ -228,7 +228,7 @@ country_event = {
 	option = {
 		name = bftb_turkey.8.a #we need to stand by Turkey
 		ai_chance = {
-			factor = 30
+			base = 30
 			modifier = {
 				has_completed_focus = ENG_global_defense
 				factor = 80
@@ -248,7 +248,7 @@ country_event = {
 	option = {
 		name = bftb_turkey.8.b #we cannot risk open war with the Soviet Union
 		ai_chance = {
-			factor = 60
+			base = 60
 			modifier = {
 				has_war_support < 20
 				factor = 40
@@ -273,7 +273,7 @@ country_event = {
 	option = {
 		name = bftb_turkey.9.a #we must concede everything to preserve our sovereignty
 		ai_chance = {
-			factor = 45
+			base = 45
 		}
 		add_stability = -0.1
 		add_war_support = -0.05
@@ -285,7 +285,7 @@ country_event = {
 	option = {
 		name = bftb_turkey.9.b #so be it, we stay the course!
 		ai_chance = {
-			factor = 55
+			base = 55
 		}
 		add_war_support = 0.1
 		custom_effect_tooltip = TUR_we_remain_committed_tt
@@ -306,7 +306,7 @@ country_event = {
 	option = {
 		name = bftb_turkey.10.a #an invasion is too risky
 		ai_chance = {
-			factor = 85
+			base = 85
 		}
 		custom_effect_tooltip = TUR_soviets_allow_militarisation_tt
 		hidden_effect = {
@@ -316,7 +316,7 @@ country_event = {
 	option = {
 		name = bftb_turkey.10.b #an excuse to finally make the Straits our own!
 		ai_chance = {
-			factor = 15
+			base = 15
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 0
@@ -708,7 +708,7 @@ country_event = {
 	option = {
 		name = bftb_turkey.21.a #the Republicans!
 		ai_chance = {
-			factor = 30
+			base = 30
 			modifier = {
 				OR = {
 					has_country_flag = TUR_AI_RANDOM_DEMOCRATIC
@@ -799,7 +799,7 @@ country_event = {
 				remove_ideas = TUR_celal_bayar
 				add_ideas = TUR_fethi_okyar
 			}
-			country_event = { id = bftb_turkey.135 days = 120 random = 80 }
+			country_event = { id = bftb_turkey.135 days = 120 random_hours = 80 }
 			set_temp_variable = {
 				var = TUR_CHP_support_var
 				value = party_popularity@neutrality
@@ -820,7 +820,7 @@ country_event = {
 			democratic > 0.4
 		}
 		ai_chance = {
-			factor = 15
+			base = 15
 			modifier = {
 				OR = {
 					has_country_flag = TUR_AI_RANDOM_DEMOCRATIC_ALTERNATE
@@ -844,7 +844,7 @@ country_event = {
 		}
 		custom_effect_tooltip = TUR_conservative_victory_tt
 		hidden_effect = {
-			country_event = { id = bftb_turkey.135 days = 30 random = 60 }
+			country_event = { id = bftb_turkey.135 days = 30 random_hours = 60 }
 			if = {
 				limit = {
 					TUR_mustafa_kemal_ataturk = { is_unit_leader = yes }
@@ -1036,7 +1036,7 @@ country_event = {
 				limit = {
 					has_completed_focus = TUR_fully_integrate_the_is_bank
 				}
-				country_event = { id = bftb_turkey.95 hours = 12 random = 48 }
+				country_event = { id = bftb_turkey.95 hours = 12 random_hours = 48 }
 			}
 			remove_ideas = TUR_kemalist_army_officers_minimal_power_disloyal
 			remove_ideas = TUR_kemalist_army_officers_decreased_power_disloyal
@@ -1060,7 +1060,7 @@ country_event = {
 	option = {
 		name = bftb_turkey.23.a #we are stronger together!
 		ai_chance = {
-			factor = 100
+			base = 100
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 100
@@ -1088,7 +1088,7 @@ country_event = {
 				set_global_flag = TUR_saadabad_pact
 			}
 			TUR = { 
-				country_event = { id = bftb_turkey.92 hours = 6 random = 8 }
+				country_event = { id = bftb_turkey.92 hours = 6 random_hours = 8 }
 				add_ai_strategy = {
 					type = befriend
 					id = ROOT
@@ -1100,7 +1100,7 @@ country_event = {
 	option = {
 		name = bftb_turkey.23.b #Turkey does not hold our best interests at heart
 		ai_chance = {
-			factor = 5
+			base = 5
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 0
@@ -1108,7 +1108,7 @@ country_event = {
 		}
 		add_war_support = 0.05
 		hidden_effect = {
-			TUR = { country_event = { id = bftb_turkey.93 hours = 6 random = 8 } }
+			TUR = { country_event = { id = bftb_turkey.93 hours = 6 random_hours = 8 } }
 		}
 	}
 }
@@ -1309,13 +1309,11 @@ country_event = {
 		name = bftb_turkey.24.i #military junta
 		trigger = {
 			NOT = {
-				OR = {
-					has_completed_focus = TUR_fully_integrate_the_is_bank
-					has_completed_focus = TUR_peace_at_home
-					has_completed_focus = TUR_reinvigorate_turkish_nationalism
-					has_completed_focus = TUR_kemalism_and_the_modern_movement
-					has_completed_focus = TUR_kemalist_socialist_theory
-				}
+				has_completed_focus = TUR_fully_integrate_the_is_bank
+				has_completed_focus = TUR_peace_at_home
+				has_completed_focus = TUR_reinvigorate_turkish_nationalism
+				has_completed_focus = TUR_kemalism_and_the_modern_movement
+				has_completed_focus = TUR_kemalist_socialist_theory
 			}
 		}
 		add_country_leader_role = {
@@ -1363,7 +1361,7 @@ country_event = {
 	option = {
 		name = bftb_turkey.25.a #we shall allow the referendum to go ahead
 		ai_chance = {
-			factor = 70
+			base = 70
 			modifier = {
 				has_completed_focus = FRA_review_foreign_policy
 				factor = 20
@@ -1973,10 +1971,8 @@ country_event = {
 			base = 10
 			modifier = {
 				factor = 0.5
-				AND = {
-					is_in_faction = yes
-					has_war = yes
-				}
+				is_in_faction = yes
+				has_war = yes
 			}
 		}
 		if = {
@@ -2011,10 +2007,8 @@ country_event = {
 			base = 1
 			modifier = {
 				factor = 5
-				AND = {
-					is_in_faction = yes
-					has_war = yes
-				}
+				is_in_faction = yes
+				has_war = yes
 			}
 		}
 		hidden_effect = {
@@ -2318,7 +2312,7 @@ country_event = {
 	option = { # send some of our best
 		name = bftb_turkey.50.a
 		ai_chance = {
-			factor = 70
+			base = 70
 		}
 		trigger = {
 			OR = {
@@ -2349,7 +2343,7 @@ country_event = {
 	option = { # send some regular light tanks
 		name = bftb_turkey.50.b
 		ai_chance = {
-			factor = 70
+			base = 70
 		}
 		trigger = {
 			OR = {
@@ -2381,7 +2375,7 @@ country_event = {
 	option = { # give them some of our old models
 		name = bftb_turkey.50.c
 		ai_chance = {
-			factor = 70
+			base = 70
 		}	
 		trigger = {
 			OR = {
@@ -2413,7 +2407,7 @@ country_event = {
 	option = { # give them nothing!
 		name = bftb_turkey.50.d
 		ai_chance = {
-			factor = 30
+			base = 30
 		}
 		TUR = { country_event = bftb_turkey.54 }
 	}	
@@ -2565,12 +2559,14 @@ country_event = {
 			TUR = { 
 				add_offsite_building = { type = industrial_complex level = 3 } 
 				add_tech_bonus = {
+					name = excavation_tech_bonus
 					bonus = 1.5
 					uses = 2
 					category = excavation_tech
 				}
 			}
 			add_tech_bonus = {
+				name = excavation_tech_bonus
 				bonus = 0.75
 				uses = 1
 				category = excavation_tech
@@ -2648,6 +2644,7 @@ country_event = {
 			}
 		}
 		add_tech_bonus = {
+			name = excavation_tech_bonus
 			bonus = 1.5
 			uses = 2
 			category = excavation_tech
@@ -2655,6 +2652,7 @@ country_event = {
 		hidden_effect = {
 			USA = {
 				add_tech_bonus = {
+					name = excavation_tech_bonus
 					bonus = 0.75
 					uses = 1
 					category = excavation_tech
@@ -2677,6 +2675,7 @@ country_event = {
 		name = bftb_turkey.57.a #fine
 		add_offsite_building = { type = industrial_complex level = 3 } 
 		add_tech_bonus = {
+			name = excavation_tech_bonus
 			bonus = 1.5
 			uses = 2
 			category = excavation_tech
@@ -2722,6 +2721,7 @@ country_event = {
 		name = bftb_turkey.58.a #fair is fair
 		TUR = { give_resource_rights = { receiver = USA state = 342 } }
 		add_tech_bonus = {
+			name = excavation_tech_bonus
 			bonus = 0.75
 			uses = 1
 			category = excavation_tech
@@ -3671,7 +3671,7 @@ country_event = {
 			active = yes
 		}
 		hidden_effect = {
-			BUL = { country_event = { id = bftb_turkey.86 hours = 6 random = 4 } }
+			BUL = { country_event = { id = bftb_turkey.86 hours = 6 random_hours = 4 } }
 			TUR = { country_event = { id = bftb_turkey.87 hours = 12 } }
 		}
 	}
@@ -3686,7 +3686,7 @@ country_event = {
 			active = yes
 		}
 		hidden_effect = {
-			BUL = { country_event = { id = bftb_turkey.86 hours = 6 random = 4 } }
+			BUL = { country_event = { id = bftb_turkey.86 hours = 6 random_hours = 4 } }
 			TUR = { country_event = { id = bftb_turkey.87 hours = 12 } }
 		}
 	}
@@ -3704,13 +3704,13 @@ country_event = {
 			active = yes
 		}
 		hidden_effect = {
-			BUL = { country_event = { id = bftb_turkey.86 hours = 6 random = 4 } }
+			BUL = { country_event = { id = bftb_turkey.86 hours = 6 random_hours = 4 } }
 			TUR = { country_event = { id = bftb_turkey.87 hours = 12 } }
 		}
 	}
 	option = {
 		name = bftb_turkey.85.d #it is not our problem
-		BUL = { country_event = { id = bftb_turkey.89 hours = 6 random = 4 } }
+		BUL = { country_event = { id = bftb_turkey.89 hours = 6 random_hours = 4 } }
 	}
 }
 
@@ -3888,7 +3888,7 @@ country_event = {
 	option = {
 		name = bftb_turkey.95.a #our old glory will be ours again
 		ai_chance = {
-			factor = 15
+			base = 15
 			modifier = {
 				OR = {
 					has_country_flag = TUR_AI_RANDOM_OTTOMAN
@@ -3999,7 +3999,7 @@ country_event = {
 	option = {
 		name = bftb_turkey.95.b #our allegiance is to the Republic and to democracy!
 		ai_chance = {
-			factor = 5
+			base = 5
 			modifier = {
 				OR = {
 					has_country_flag = TUR_AI_RANDOM_DEMOCRATIC_ALTERNATE
@@ -4359,10 +4359,8 @@ country_event = {
 				modifier = {
 					factor = 0
 					all_owned_state = {
-						AND = {  
-							is_core_of = KUR
-							infrastructure > 1
-						}
+						is_core_of = KUR
+						infrastructure > 1
 					}
 				}
 				country_event = { id = bftb_turkey.106 } #Kurds demand removal of infrastructure
@@ -4374,10 +4372,8 @@ country_event = {
 				modifier = {
 					factor = 0
 					all_owned_state = {
-						AND = {  
-							is_core_of = KUR
-							has_dynamic_modifier = { modifier = conscription_exemptions_granted }
-						}
+						is_core_of = KUR
+						has_dynamic_modifier = { modifier = conscription_exemptions_granted }
 					}
 				}
 				country_event = { id = bftb_turkey.108 } #Kurds demand exemption from conscription
@@ -4386,12 +4382,10 @@ country_event = {
 				modifier = {
 					factor = 0
 					any_owned_state = {
-						AND = { 
-							is_core_of = KUR
-							NOT = {
-								has_dynamic_modifier = { modifier = kurdish_rebellion }
-							}
-						}				
+						is_core_of = KUR
+						NOT = {
+							has_dynamic_modifier = { modifier = kurdish_rebellion }
+						}
 					}
 				}
 				country_event = { id = bftb_turkey.109 } #Kurdish groups stage hostile takeover of rural towns
@@ -4741,27 +4735,23 @@ country_event = {
 				modifier = {
 					factor = 0
 					all_owned_state = {
-						AND = { 
-							OR = { 
-								has_dynamic_modifier = { modifier = islamist_opposition }
-								has_dynamic_modifier = { modifier = islamist_sedition }
-								has_dynamic_modifier = { modifier = islamist_insurgency }
-							}
-							OR = {
-								is_core_of = TUR
-								AND = {
-									is_core_of = KUR
-									is_owned_by = TUR
-									NOT = {
-										OR = {
-											is_core_of = IRQ
-											is_core_of = PER
-										}
-									}
+						OR = { 
+							has_dynamic_modifier = { modifier = islamist_opposition }
+							has_dynamic_modifier = { modifier = islamist_sedition }
+							has_dynamic_modifier = { modifier = islamist_insurgency }
+						}
+						OR = {
+							is_core_of = TUR
+							AND = {
+								is_core_of = KUR
+								is_owned_by = TUR
+								NOT = {
+									is_core_of = IRQ
+									is_core_of = PER
 								}
 							}
-							THIS = { num_of_civilian_factories < 1 }
 						}
+						industrial_complex < 1
 					}
 				}
 				modifier = {
@@ -5484,7 +5474,7 @@ country_event = {
 			ruling_only = yes
 		}
 		date > 1937.01.01
-		date < 1939.14.08
+		date < 1939.8.14
 	}
 
 	fire_only_once = yes
@@ -5677,15 +5667,13 @@ country_event = {
 			OR = { 
 				TUR_has_a_prime_minister = no
 				NOT = {
-					OR = {
-						has_completed_focus = TUR_fully_integrate_the_is_bank
-						has_completed_focus = TUR_privatize_the_anadolu_agency
-						has_completed_focus = TUR_the_sanayiciler
-						has_completed_focus = TUR_peace_at_home
-						has_completed_focus = TUR_reinvigorate_turkish_nationalism
-						has_completed_focus = TUR_kemalism_and_the_modern_movement
-						has_completed_focus = TUR_kemalist_socialist_theory
-					}
+					has_completed_focus = TUR_fully_integrate_the_is_bank
+					has_completed_focus = TUR_privatize_the_anadolu_agency
+					has_completed_focus = TUR_the_sanayiciler
+					has_completed_focus = TUR_peace_at_home
+					has_completed_focus = TUR_reinvigorate_turkish_nationalism
+					has_completed_focus = TUR_kemalism_and_the_modern_movement
+					has_completed_focus = TUR_kemalist_socialist_theory
 				}
 			}
 		}
@@ -5856,10 +5844,8 @@ country_event = {
 	option = {
 		name = bftb_turkey.137.b #they are traitors to the Revolution!
 		trigger = {
-			AND = {
-				has_government = communism
-				NOT = { tag = SOV }
-			}
+			has_government = communism
+			NOT = { tag = SOV }
 		}
 		TUR = {
 			leave_faction = yes
@@ -5869,10 +5855,8 @@ country_event = {
 	option = {
 		name = bftb_turkey.137.c #perhaps they are experimenting with Socialism in One Country!
 		trigger = {
-			AND = {
-				has_government = communism
-				tag = SOV
-			}
+			has_government = communism
+			tag = SOV
 		}
 		custom_effect_tooltip = TUR_keeping_turkey_under_observation
 		hidden_effect = {
