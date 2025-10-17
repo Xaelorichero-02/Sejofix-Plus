@@ -3400,7 +3400,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}	
-		allow_branch = { NOT = { has_dlc = "Graveyard of Empires" } } #this focus is totally incompatible with GoE
+		allow_branch = {
+			NOT = { has_dlc = "Graveyard of Empires" } #this focus is totally incompatible with GoE
+			has_dlc = "Man the Guns"
+		}
 		completion_reward = {
 			RAJ = {
 				if = {
