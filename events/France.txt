@@ -745,10 +745,7 @@ country_event = {
 				fascism = 76
 				communism = 2
 			}
-			every_unit_leader = {
-				limit = {
-					has_id = 101
-				}
+			FRA_charles_de_gaulle = { #Move De Gaulle (needed here for some reason - updated vanilla code for nsb char system)
 				set_nationality = FRA
 			}
 			
@@ -1316,10 +1313,7 @@ country_event = {
 			GER = {
 				give_guarantee = PREV
 			}
-			every_unit_leader = {
-				limit = {
-					has_id = 101 #de Gaulle
-				}
+			FRA_charles_de_gaulle = { #Move De Gaulle (needed here for some reason - updated vanilla code for nsb char system)
 				set_nationality = FRA
 			}
 			every_army_leader = {
