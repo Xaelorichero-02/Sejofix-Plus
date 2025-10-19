@@ -146,6 +146,8 @@ country_event = {
 		NOT = { has_idea = indian_independence_promised_idea }
 		RAJ = { is_subject_of = ENG }
 	}
+
+	fire_only_once = yes
 	
 	option = {
 		name = britain.6.a
@@ -174,8 +176,8 @@ country_event = {
 		name = britain.7.a
 		ai_chance = { base = 60 }
 		GER = {
-				add_opinion_modifier = { target = ROOT modifier = embargo } 
-			}
+			add_opinion_modifier = { target = ROOT modifier = embargo } 
+		}
 	}
 	option = {
 		name = britain.7.b
@@ -605,6 +607,8 @@ country_event = {
 	desc = britain.16.d
 	picture = GFX_report_event_europe_funeral
 
+	is_triggered_only = yes
+
 	fire_only_once = yes
 
 	immediate = {
@@ -630,6 +634,8 @@ country_event = {
 	title = britain.17.t
 	desc = britain.17.d
 	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
 
 	fire_only_once = yes
 
@@ -819,6 +825,8 @@ country_event = {
     picture = GFX_report_event_royal_parade
  
     fire_only_once = yes
+
+	is_triggered_only = yes
  
     trigger = {
         has_country_leader = {
