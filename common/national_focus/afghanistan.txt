@@ -2566,13 +2566,13 @@ focus_tree = {
 		}
 		available = {
 		}
-		allow_branch = {
-			has_dlc = "Arms Against Tyranny"
-		}
+		#allow_branch = { #sf bugs out Prussia of the Orient
+		#	has_dlc = "Arms Against Tyranny"
+		#}
 		search_filters = { FOCUS_FILTER_INTERNATIONAL_TRADE }
 
 		completion_reward = {
-			IF = {
+			if = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}
@@ -2591,36 +2591,64 @@ focus_tree = {
 					equipment_type = medium_plane_airframe
 					seller_tags = { USA JAP ENG FRA ITA GER SOV } 
 				}
-				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						has_dlc = "By Blood Alone"
+					}
+					add_equipment_to_stockpile = { 
+						type = small_plane_airframe_1
+						amount = 25
+						producer = ENG
+					}
+					add_equipment_to_stockpile = { 
+						type = small_plane_airframe_1
+						amount = 25
+						producer = GER
+					}
+					else = {
+						add_equipment_to_stockpile = { 
+							type = fighter_equipment_1
+							amount = 25
+							producer = ENG
+						}
+						add_equipment_to_stockpile = { 
+							type = fighter_equipment_1
+							amount = 25
+							producer = GER
+						}
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							has_dlc = "By Blood Alone"
+						}
+						add_equipment_to_stockpile = { 
+							type = small_plane_airframe_1
+							amount = 50
+							producer = ENG
+						}
+						add_equipment_to_stockpile = { 
+							type = small_plane_airframe_1
+							amount = 50
+							producer = GER
+						}
+						else = {
+							add_equipment_to_stockpile = { 
+								type = fighter_equipment_1
+								amount = 50
+								producer = ENG
+							}
+							add_equipment_to_stockpile = { 
+								type = fighter_equipment_1
+								amount = 50
+								producer = GER
+							}
+						}
+					}
+				}
 			}
-
-			IF = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				add_equipment_to_stockpile = { 
-					type = small_plane_airframe_1
-					amount = 25
-					producer = ENG
-				}
-				add_equipment_to_stockpile = { 
-					type = small_plane_airframe_1
-					amount = 25
-					producer = GER
-				}
-			}
-			ELSE = {
-				add_equipment_to_stockpile = { 
-					type = fighter_equipment_1
-					amount = 25
-					producer = ENG
-				}
-				add_equipment_to_stockpile = { 
-					type = fighter_equipment_1
-					amount = 25
-					producer = GER
-				}
-			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 		}
 	}
 
