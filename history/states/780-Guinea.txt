@@ -1,23 +1,26 @@
 
 state={
-	id=778
-	name="STATE_778" # Upper Volta
-	manpower = 3186184
+	id=780
+	name="STATE_780" # Guinea
+	manpower = 2065500
 	
 	state_category = rural
 	history={
 		owner = FRA
-		add_core_of = VOL
+		add_core_of = GNA
 		victory_points = {
-			10836 1
+			1909 1 
 		}
 		buildings = {
 			infrastructure = 2
+			1909 = {
+				naval_base = 1
+			}
 		}
 	}
 
 	provinces={
-		2001 7950 7983 8071 10836 12851
+		1909 4957 5039 8008 12802 12858
 	}
 
 	local_supplies=1.0 

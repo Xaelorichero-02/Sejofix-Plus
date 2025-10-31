@@ -17,15 +17,9 @@ state = {
 
 			12589 = {
 				naval_base = 4
-				# Woodhead Dam
+			    # Woodhead Dam
 				dam = 1
 			}
-
-			
-			
-
-		
-
 		}
 
 		victory_points = {
