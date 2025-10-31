@@ -832,11 +832,9 @@
 					ROOT = { has_full_control_of_state = PREV }
 					is_core_of = ROOT
 					not = {
-						OR = {
-							state = 646
-							state = 645
-							state = 555
-						}
+						state = 646
+						state = 645
+						state = 555
 					}
 					free_building_slots = {
 						building = industrial_complex
@@ -1213,11 +1211,9 @@
 			if = {
 				limit = {
 					PRC = { #only fires the event for PRC if they control ALL of the states (to ensure that only one of them gets it, to avoid issues when one selects to turn over the states and the other doesn't)
-						AND = {
-							controls_state = 608
-							controls_state = 597
-							controls_state = 614
-						}
+						controls_state = 608
+						controls_state = 597
+						controls_state = 614
 					}
 				}
 				PRC = {
@@ -1227,11 +1223,9 @@
 			if = {
 				limit = {
 					SHX = { #only fires the event for SHX if they control ALL of the states (to ensure that only one of them gets it, to avoid issues when one selects to turn over the states and the other doesn't)
-						AND = {
-							controls_state = 608
-							controls_state = 597
-							controls_state = 614
-						}
+						controls_state = 608
+						controls_state = 597
+						controls_state = 614
 					}
 				}
 				SHX = {
@@ -1515,7 +1509,6 @@
 			create_wargoal = {
 				target = "PHI"
 				type = puppet_wargoal_focus
-				expire = 0
 				expire = 0
 			}
 			add_ai_strategy = {
@@ -2056,11 +2049,9 @@
 					ROOT = { has_full_control_of_state = PREV }
 					is_core_of = ROOT
 					not = {
-						OR = {
-							state = 646
-							state = 645
-							state = 555
-						}
+						state = 646
+						state = 645
+						state = 555
 					}
 					free_building_slots = {
 						building = industrial_complex
@@ -2153,11 +2144,9 @@
 					ROOT = { has_full_control_of_state = PREV }
 					is_core_of = ROOT
 					not = {
-						OR = {
-							state = 646
-							state = 645
-							state = 555
-						}
+						state = 646
+						state = 645
+						state = 555
 					}
 					free_building_slots = {
 						building = arms_factory
@@ -2178,11 +2167,9 @@
 					ROOT = { has_full_control_of_state = PREV }
 					is_core_of = ROOT
 					not = {
-						OR = {
-							state = 646
-							state = 645
-							state = 555
-						}
+						state = 646
+						state = 645
+						state = 555
 					}					
 					free_building_slots = {
 						building = industrial_complex
@@ -2449,12 +2436,10 @@
 					is_fully_controlled_by = PREV
 					is_core_of = ROOT	
 					not = {
-						OR = {
-							state = 646
-							state = 645
-							state = 555
-						}
-					}					
+						state = 646
+						state = 645
+						state = 555
+					}
 					free_building_slots = {
 						building = arms_factory
 						size > 1
@@ -2474,12 +2459,10 @@
 					is_fully_controlled_by = PREV
 					is_core_of = ROOT	
 					not = {
-						OR = {
-							state = 646
-							state = 645
-							state = 555
-						}
-					}					
+						state = 646
+						state = 645
+						state = 555
+					}
 					free_building_slots = {
 						building = arms_factory
 						size > 1
@@ -2823,11 +2806,9 @@
 					ROOT = { has_full_control_of_state = PREV }
 					is_core_of = ROOT
 					not = {
-						OR = {
-							state = 646
-							state = 645
-							state = 555
-						}
+						state = 646
+						state = 645
+						state = 555
 					}
 					free_building_slots = {
 						building = industrial_complex
@@ -3721,11 +3702,9 @@
 					ROOT = { has_full_control_of_state = PREV }
 					is_core_of = ROOT
 					not = {
-						OR = {
-							state = 646
-							state = 645
-							state = 555
-						}
+						state = 646
+						state = 645
+						state = 555
 					}
 					free_building_slots = {
 						building = industrial_complex
@@ -3747,11 +3726,9 @@
 					NOT = { has_state_flag = JAP_zaibatsus_factories }
 					is_core_of = ROOT
 					not = {
-						OR = {
-							state = 646
-							state = 645
-							state = 555
-						}
+						state = 646
+						state = 645
+						state = 555
 					}
 					free_building_slots = {
 						building = industrial_complex
@@ -5583,11 +5560,9 @@
 					ROOT = { has_full_control_of_state = PREV }
 					is_core_of = ROOT
 					not = {
-						OR = {
-							state = 646
-							state = 645
-							state = 555
-						}
+						state = 646
+						state = 645
+						state = 555
 					}
 					free_building_slots = {
 						building = dockyard
@@ -5608,12 +5583,10 @@
 					ROOT = { has_full_control_of_state = PREV }
 					is_core_of = ROOT	
 					not = {
-						OR = {
-							state = 646
-							state = 645
-							state = 555
-						}
-					}				
+						state = 646
+						state = 645
+						state = 555
+					}
 					free_building_slots = {
 						building = dockyard
 						size > 1
