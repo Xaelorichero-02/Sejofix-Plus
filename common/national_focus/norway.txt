@@ -7392,7 +7392,7 @@ focus_tree = {
 									ROOT = {
 										create_wargoal = {
 											type = take_state_focus
-											target = PREV
+											target = 331.OWNER
 											generator = { 331 } 
 										}
 									}
@@ -7433,7 +7433,7 @@ focus_tree = {
 									ROOT = {
 										create_wargoal = {
 											type = take_state_focus
-											target = PREV
+											target = 332.OWNER
 											generator = { 332 } 
 										}
 									}
