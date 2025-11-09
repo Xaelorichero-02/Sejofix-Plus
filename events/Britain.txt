@@ -686,7 +686,7 @@ country_event = {
 		}
 		create_country_leader = {
 			name = "Edward VIII"
-			desc = "POLITICS_EDWARD_EDWARD_DESC"
+			desc = "POLITICS_EDWARD_VIII_DESC"
 			picture = GFX_portrait_Edward_VIII
 			expire = "1965.1.1"
 			ideology = fascism_ideology
