@@ -1977,6 +1977,7 @@ ideas = {
 			}
 
 			targeted_modifier = {
+				tag = event_target:ITA_cw_overlord
 				attack_bonus_against = 0.05
 				breakthrough_bonus_against = 0.05
 			}
