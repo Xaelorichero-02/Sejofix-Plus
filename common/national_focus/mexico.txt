@@ -257,7 +257,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MEX_focus_rent_freeze
-		icon = GFX_focus_generic_self_management
+		icon = GFX_focus_generic_low_cost_housing
 		prerequisite = { focus = MEX_focus_confederation_of_mexican_workers }
 		x = 0
 		y = 1
@@ -320,7 +320,7 @@ focus_tree = {
 	
 	focus = {
 		id = MEX_focus_party_of_the_revolution
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_ICE_embrace_the_workers_revolution
 		prerequisite = { focus = MEX_focus_ejido_worker_militias }
 		x = 0
 		y = 1
@@ -632,7 +632,7 @@ focus_tree = {
 
 	focus = {
 		id = MEX_focus_urban_development
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_SWE_urbanization
 		prerequisite = { focus = MEX_focus_strike_breaking }
 		x = 0
 		y = 1
@@ -693,7 +693,7 @@ focus_tree = {
 
 	focus = {
 		id = MEX_focus_cientifico_camarilla
-		icon = GFX_focus_research
+		icon = GFX_focus_generic_university_3
 		prerequisite = { focus = MEX_focus_urban_development }
 		x = 0
 		y = 1
@@ -2891,7 +2891,7 @@ focus_tree = {
 	
 	focus = {
 		id = MEX_focus_catholic_politics
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_generic_catholic_dominion
 		prerequisite = { focus = MEX_focus_knights_of_columbus }
 		x = 0
 		y = 2
@@ -3902,7 +3902,7 @@ focus_tree = {
 	
 	focus = {
 		id = MEX_focus_hispanic_culture
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_focus_CHL_promote_pan_hispanic_rhetoric
 		prerequisite = { focus = MEX_focus_the_gold_shirts }
 		prerequisite = { focus = MEX_focus_international_struggle }
 		x = 0
@@ -3937,7 +3937,7 @@ focus_tree = {
 
 	focus = {
 		id = MEX_focus_revolutionary_class_war
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_focus_spr_class_war
 		prerequisite = { focus = MEX_focus_the_red_shirts }
 		prerequisite = { focus = MEX_focus_international_struggle }
 		x = 0
@@ -4002,7 +4002,25 @@ focus_tree = {
 	
 	focus = {
 		id = MEX_focus_spanish_civil_war_refugees
-		icon = GFX_goal_generic_intelligence_exchange
+		dynamic = yes
+		icon = {
+			value = GFX_focus_generic_invite_republican_spanish_exiles
+			trigger = {
+				OR = {
+					has_government = communism
+					has_government = democratic
+				}
+			}
+		}
+		icon = {
+			value = GFX_focus_ARG_invite_spanish_nationalists
+			trigger = {
+				NOT = {
+					has_government = communism
+					has_government = democratic
+				}
+			}
+		}
 		prerequisite = { focus = MEX_focus_professional_army focus = MEX_focus_soldaderas focus = MEX_focus_hispanic_culture focus = MEX_focus_revolutionary_class_war }
 		x = 1
 		y = 2
@@ -4069,7 +4087,7 @@ focus_tree = {
 	
 	focus = {
 		id = MEX_focus_falangist_veterans
-		icon = GFX_goal_generic_axis_build_infantry
+		icon = GFX_focus_spa_the_phalanx_ascendant
 		prerequisite = { focus = MEX_focus_spanish_civil_war_refugees }
 		mutually_exclusive = { focus = MEX_focus_support_spains_loyalists }
 		x = -1
@@ -4177,7 +4195,7 @@ focus_tree = {
 
 	focus = {
 		id = MEX_focus_support_spains_loyalists
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
 		prerequisite = { focus = MEX_focus_spanish_civil_war_refugees }
 		mutually_exclusive = { focus = MEX_focus_falangist_veterans }
 		x = 1
