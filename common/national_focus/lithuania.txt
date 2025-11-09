@@ -111,10 +111,6 @@ focus_tree = {
 			
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_stability = 0.05
@@ -160,10 +156,6 @@ focus_tree = {
 			
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			LIT_jonas_cernius = {
@@ -191,7 +183,15 @@ focus_tree = {
 				}
 			}
 			effect_tooltip = {
-				create_corps_commander = { name = "Kazys Skučas"}
+				create_corps_commander = {
+					name = "Kazys Skučas"
+					traits = { }
+					skill = 1
+					attack_skill = 1
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+				}
 			}
 
 			army_experience = 40
@@ -219,10 +219,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_MANPOWER }
 		completion_reward = {
@@ -266,10 +262,6 @@ focus_tree = {
 			SOV = { is_subject = yes }
 			SOV = { has_capitulated = yes }
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -331,10 +323,6 @@ focus_tree = {
 			
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
 			add_ideas = { LIT_victory_in_trust_idea }
@@ -364,10 +352,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -402,10 +386,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -442,10 +422,6 @@ focus_tree = {
 				}
 			}
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -484,10 +460,6 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			POL = { country_event = { id = LIT_events.3 hours = 8 } }
@@ -518,10 +490,6 @@ focus_tree = {
 		bypass = {
 			has_government = democratic
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -561,10 +529,6 @@ focus_tree = {
 			
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_country_leader_trait = dictator
@@ -592,10 +556,6 @@ focus_tree = {
 		bypass = {
 			has_government = democratic
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -647,10 +607,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 		completion_reward = {
@@ -728,10 +684,6 @@ focus_tree = {
 			NOT = { owns_state = 188 }
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_popularity = {
@@ -790,8 +742,6 @@ focus_tree = {
 			
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -834,8 +784,6 @@ focus_tree = {
 			
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -878,8 +826,6 @@ focus_tree = {
 			
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
@@ -922,8 +868,6 @@ focus_tree = {
 			
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
@@ -937,7 +881,7 @@ focus_tree = {
 			}
 			else = {
 				add_tech_bonus = {
-					name = underground_bonus
+					name = electronics_bonus
 					bonus = 1.0
 					uses = 2
 					category = electronics
@@ -968,10 +912,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1015,10 +955,6 @@ focus_tree = {
 			
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_popularity = {
@@ -1059,10 +995,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1158,10 +1090,6 @@ focus_tree = {
 			
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			custom_effect_tooltip = cave_to_enemies_tt
@@ -1197,10 +1125,6 @@ focus_tree = {
 			
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			show_ideas_tooltip = LIT_augustinas_voldemaras
@@ -1230,10 +1154,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 		completion_reward = {
@@ -1273,10 +1193,6 @@ focus_tree = {
 			
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			LIT_iron_wolf_up_effect = yes
@@ -1304,10 +1220,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -1345,10 +1257,6 @@ focus_tree = {
 			
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_ideas = military_youth_focus
@@ -1376,10 +1284,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		completion_reward = {
 			if = {
@@ -1436,10 +1340,6 @@ focus_tree = {
 			
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
 			capital_scope = {
 				add_building_construction = {
@@ -1473,10 +1373,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 		completion_reward = {
@@ -1553,8 +1449,6 @@ focus_tree = {
 			} 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1603,10 +1497,6 @@ focus_tree = {
 				controls_state = 188
 			}
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1664,10 +1554,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
@@ -1838,20 +1724,14 @@ focus_tree = {
 			
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			if = {
 				limit = {
 					LAT = {
-						AND = {
-							exists = yes
-							is_subject = no
-							NOT = { is_in_faction_with = ROOT }
-						}
+						exists = yes
+						is_subject = no
+						NOT = { is_in_faction_with = ROOT }
 					}
 				}
 				create_wargoal = {
@@ -1862,11 +1742,9 @@ focus_tree = {
 			if = {
 				limit = {
 					EST = {
-						AND = {
-							exists = yes
-							is_subject = no
-							NOT = { is_in_faction_with = ROOT }
-						}
+						exists = yes
+						is_subject = no
+						NOT = { is_in_faction_with = ROOT }
 					}
 				}
 				create_wargoal = {
@@ -1915,10 +1793,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
@@ -1978,10 +1852,6 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			if = {
@@ -2038,10 +1908,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -2144,10 +2010,6 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			hidden_effect = {
@@ -2208,10 +2070,6 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			every_other_country = {
@@ -2258,10 +2116,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
@@ -2459,10 +2313,6 @@ focus_tree = {
 			
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			every_state = {
@@ -2496,10 +2346,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 		completion_reward = {
@@ -2545,10 +2391,6 @@ focus_tree = {
 			
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			LIT_remove_iron_wolf_effect = yes
@@ -2582,10 +2424,6 @@ focus_tree = {
 			
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_ideas = BALTIC_forest_brothers_idea
@@ -2613,7 +2451,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -2650,7 +2487,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -2679,7 +2515,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
@@ -2708,7 +2543,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -2737,7 +2571,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 		completion_reward = {
@@ -2775,7 +2608,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -2806,7 +2638,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
@@ -2837,7 +2668,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -2905,7 +2735,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -2974,7 +2803,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -3017,7 +2845,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -3049,7 +2876,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -3112,7 +2938,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
@@ -3223,10 +3048,6 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			if = {
@@ -3308,10 +3129,6 @@ focus_tree = {
 				}
 			}
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -3409,10 +3226,6 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			set_country_flag = baltic_entente_leader_flag
@@ -3473,10 +3286,6 @@ focus_tree = {
 			
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			look_north_focus_effect = yes
@@ -3507,7 +3316,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -3547,7 +3355,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -3587,7 +3394,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -3633,7 +3439,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -3681,7 +3486,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -3825,7 +3629,6 @@ focus_tree = {
 		bypass = {
 			
 		}
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
@@ -3909,7 +3712,6 @@ focus_tree = {
 			
 		}
 
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -3944,7 +3746,6 @@ focus_tree = {
 			has_capitulated = yes
 		}
 
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
@@ -4018,7 +3819,6 @@ focus_tree = {
 			
 		}
 
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -4052,7 +3852,6 @@ focus_tree = {
 			
 		}
 
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -4196,9 +3995,7 @@ focus_tree = {
 				}
 			}
 		}
-		
-		cancel_if_invalid = yes
-		continue_if_invalid = no 
+		 
 
 		available_if_capitulated = yes
 

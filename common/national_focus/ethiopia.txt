@@ -4175,7 +4175,6 @@ focus_tree = {
 		bypass = { 
 			
 		}
-		cancel_if_invalid = yes 
 
 		search_filters = {}
 
