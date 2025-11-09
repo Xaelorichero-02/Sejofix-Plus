@@ -5405,8 +5405,6 @@ focus_tree = {
 			}
 		}
 
-		available_if_capitulated = no
-
 		completion_reward = {
 			if = {
 				limit = {
@@ -5729,15 +5727,12 @@ focus_tree = {
 			has_full_control_of_state = 980
 			has_full_control_of_state = 8
 		}
-		cancel_if_invalid = yes
 		prerequisite = { focus = HOL_revive_the_buffer_state_proposal }
 		icon = GFX_goal_generic_construct_civilian
 		x = 0
 		y = 1
 		relative_position_id = HOL_revive_the_buffer_state_proposal
 		cost = 10
-
-		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			977 = {
@@ -5827,7 +5822,15 @@ focus_tree = {
 						}
 					}
 					GER = {
-						has_completed_focus = GER_revive_the_kaiserreich 
+						if = {
+							limit = {
+								has_dlc = "Gotterdammerung"
+							}
+							has_completed_focus = GER_revive_the_kaiserreich_ww
+							else = {
+								has_completed_focus = GER_revive_the_kaiserreich
+							}
+						}
 						is_faction_leader = yes
 					}
 				}
@@ -5855,7 +5858,15 @@ focus_tree = {
 					is_in_faction = yes
 					NOT = { has_war_with = GER }
 					GER = {
-						has_completed_focus = GER_revive_the_kaiserreich
+						if = {
+							limit = {
+								has_dlc = "Gotterdammerung"
+							}
+							has_completed_focus = GER_revive_the_kaiserreich_ww
+							else = {
+								has_completed_focus = GER_revive_the_kaiserreich
+							}
+						}
 					}
 				}
 				leave_faction = yes
@@ -5866,7 +5877,15 @@ focus_tree = {
 					is_in_faction = no
 					NOT = { has_war_with = GER }
 					GER = {
-						has_completed_focus = GER_revive_the_kaiserreich
+						if = {
+							limit = {
+								has_dlc = "Gotterdammerung"
+							}
+							has_completed_focus = GER_revive_the_kaiserreich_ww
+							else = {
+								has_completed_focus = GER_revive_the_kaiserreich
+							}
+						}
 					}
 				}
 				GER = { country_event = { id = generic.2 } }
@@ -5942,6 +5961,7 @@ focus_tree = {
 				limit = {
 					NOT = { has_war_with = GER }
 					NOT = { GER = { has_completed_focus = GER_revive_the_kaiserreich } }
+					NOT = { GER = { has_completed_focus = GER_revive_the_kaiserreich_ww } }
 				}
 				effect_tooltip = {
 					every_country = {
