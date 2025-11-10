@@ -3,5 +3,5 @@ tags={
 	"Gameplay"
 	"Fixes"
 }
-name="Sejofix+"
+name="Vanilla Tweaks"
 supported_version="1.16.*"
