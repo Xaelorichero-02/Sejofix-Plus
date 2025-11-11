@@ -5142,11 +5142,11 @@ country_event = {
 		event_target:TUR_fundamentalist_state = { 
 			TUR_placate_fundamentalist_state_effect = yes
 		}
-		hidden_effect = {
-			event_target:TUR_fundamentalist_state = { 
-				clr_state_flag = TUR_fundamentalist_appeasement_state_flag
-			}
-		}
+		#hidden_effect = {
+		#	event_target:TUR_fundamentalist_state = { 
+		#		clr_state_flag = TUR_fundamentalist_appeasement_state_flag
+		#	}
+		#}
 	}
 }
 
