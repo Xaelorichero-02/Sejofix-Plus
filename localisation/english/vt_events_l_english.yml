@@ -24,6 +24,16 @@
  BBA_italy_communist_events.300.t:0 "International Aid Arrives!"
  BBA_italy_communist_events.300.desc:0 ""
 
+ BBA_ethiopia_balance_of_power_events.50.t:0 "Random Event Roll"
+ BBA_ethiopia_balance_of_power_events.50.desc:0 "This is a hidden event randomizing the next one."
+ BBA_ethiopia_balance_of_power_events.50.a:0 "You should not see this. This is a hidden event."
+ BBA_ethiopia_anti_colonialism_events.1.t:0 "Independence War"
+ BBA_ethiopia_anti_colonialism_events.1.desc:0 "Hidden event for IND WAR country to dispatch intervention event to opponent "
+ BBA_ethiopia_anti_colonialism_events.1.a:0 "You should not see this. This is a hidden event."
+ BBA_ethiopia_industrial_financial_events.1.t:0 "Random Industry Event Roll"
+ BBA_ethiopia_industrial_financial_events.1.desc:0 "You should not see this. This is a hidden event."
+ BBA_ethiopia_industrial_financial_events.1.a:0 "You should not see this. This is a hidden event."
+
  vt_turkey.1.t:0 "Submit or War!"
  vt_turkey.1.d:0 "The Turks have demanded that we cave to them without a fight."
  vt_turkey.1.a:0 "It's over, nothing can be done"
