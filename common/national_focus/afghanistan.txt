@@ -766,10 +766,8 @@ focus_tree = {
 				limit = {
 					is_major = yes 
 					NOT = {
-						OR = {
-							original_tag = SOU
-							has_war_with = ROOT
-						}
+						original_tag = SOU
+						has_war_with = ROOT
 					}
 				}
 				country_event = {
@@ -1325,7 +1323,7 @@ focus_tree = {
 		available = {
 		}
 
-		search_filters = {  }
+		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
 
@@ -1452,7 +1450,7 @@ focus_tree = {
 		}
 		#allow_branch = {
 		#}
-		search_filters = {  }
+		#search_filters = {  }
 
 		completion_reward = {
 
@@ -1894,7 +1892,7 @@ focus_tree = {
 		bypass = {
 			has_done_agency_upgrade = upgrade_training_centers
 		}
-		search_filters = {  }
+		#search_filters = {  }
 
 		completion_reward = {
 			IF = {
@@ -1946,7 +1944,7 @@ focus_tree = {
 			
 		}
 		
-		search_filters = {  }
+		#search_filters = {  }
 
 		completion_reward = {
 			
@@ -2670,7 +2668,7 @@ focus_tree = {
 		available = {
 		}
 		
-		search_filters = { }
+		#search_filters = { }
 
 		completion_reward = { 
 
