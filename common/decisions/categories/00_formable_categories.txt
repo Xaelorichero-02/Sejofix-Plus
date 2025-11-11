@@ -654,7 +654,7 @@ neo_mesopotamia_category = {
 	}
 }
 
-west_africa_category = { #sf
+west_africa_category = {
 	icon = generic_formable_nations
 	allowed = {
 		OR = {

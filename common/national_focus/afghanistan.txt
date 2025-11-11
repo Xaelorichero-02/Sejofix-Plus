@@ -2566,7 +2566,7 @@ focus_tree = {
 		}
 		available = {
 		}
-		#allow_branch = { #sf bugs out Prussia of the Orient
+		#allow_branch = { #bugs out Prussia of the Orient
 		#	has_dlc = "Arms Against Tyranny"
 		#}
 		search_filters = { FOCUS_FILTER_INTERNATIONAL_TRADE }

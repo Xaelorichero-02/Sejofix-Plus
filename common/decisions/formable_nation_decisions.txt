@@ -4402,7 +4402,7 @@ form_european_union_category = {
 				state = 221 # Kharkiv
 				state = 227 # Donetsk
 				state = 228 # Luhansk
-				#state = 137 # Crimea #sf moved to kuban
+				#state = 137 # Crimea #moved to kuban
 			}
 		}
 
@@ -4458,7 +4458,7 @@ form_european_union_category = {
 			controls_state = 221 # Kharkiv
 			controls_state = 227 # Donetsk
 			controls_state = 228 # Luhansk
-			#controls_state = 137 # Crimea #sf moved to kuban
+			#controls_state = 137 # Crimea #moved to kuban
 		}
 
 		days_remove = 70
@@ -4492,7 +4492,7 @@ form_european_union_category = {
 							state = 221 # Kharkiv
 							state = 227 # Donetsk
 							state = 228 # Luhansk
-							#state = 137 # Crimea #sf moved to kuban
+							#state = 137 # Crimea #moved to kuban
 						}
 					}
 					add_core_of = ROOT
@@ -11108,7 +11108,7 @@ form_macedonian_empire_category = {
 
 		allowed = {
 			OR = {
-				original_tag = MAC #sf very questionable but sejo prob wants it like that
+				original_tag = MAC #very questionable but sejo prob wants it like that
 				AND = {
 					original_tag = GRE
 					has_dlc = "Battle for the Bosporus"
@@ -11139,8 +11139,8 @@ form_macedonian_empire_category = {
 				controls_state = 106 #Macedonia
 				controls_state = 970 #Debar
 				controls_state = 803 #Southern Serbia
-				controls_state = 108 #sf Morava
-				controls_state = 802 #sf Kosovo
+				controls_state = 108 #Morava
+				controls_state = 802 #Kosovo
 				controls_state = 105 #Montenegro
 				controls_state = 44  #Central Albania
 				controls_state = 805 #Northern Epirus

@@ -2244,7 +2244,7 @@ country_event = {
 			}
 		}
 		custom_effect_tooltip = generic_skip_one_line_tt
-		if = { #SF - GoE Fix
+		if = { #GoE Fix
 			limit = {
 				OMA = {
 					is_subject_of = ENG
@@ -2253,13 +2253,13 @@ country_event = {
 			hidden_effect = {
 				OMA = {
 					country_event = {
-						id = sf_turkey.2
+						id = vt_turkey.2
 						hours = 24
 					}
 				}
 			}
 		}
-		if = { #SF - GoE Fix
+		if = { #GoE Fix
 			limit = {
 				KUW = {
 					is_subject_of = ENG
@@ -2268,7 +2268,7 @@ country_event = {
 			hidden_effect = {
 				KUW = {
 					country_event = {
-						id = sf_turkey.1
+						id = vt_turkey.1
 						hours = 24
 					}
 				}

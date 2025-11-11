@@ -5915,7 +5915,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			root = {
-				save_global_event_target_as = ITA_cw_overlord #SF fixes targeted modifier of independence war
+				save_global_event_target_as = ITA_cw_overlord #fixes targeted modifier of independence war
 			}
 		}
 	}

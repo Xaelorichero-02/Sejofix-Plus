@@ -3309,8 +3309,8 @@ focus_tree = {
 
 		available = {
 			is_faction_leader = yes
-			is_in_faction_with = LAT #SF
-			is_in_faction_with = EST #SF
+			is_in_faction_with = LAT
+			is_in_faction_with = EST
 		}
 
 		bypass = {
