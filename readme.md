@@ -1,7 +1,6 @@
 # Vanilla Tweaks
 ## List of Changes
  - Rebalanced Turkish focus tree.
- - Fixed all misplaced brackets in the Turkish focus tree.
  - Made the Defence of the Gulf compatible with GoE.
  - Fixed most bugs with formables.
  - Added West African formable.
