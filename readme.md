@@ -9,3 +9,4 @@
  - All focuses creating a faction now allow countries to make factions.
  - Improved performance.
  - Fixed Missiolinis Re-Roll.
+ - Fixed many typos.
