@@ -1,6 +1,10 @@
 ﻿l_english:
  britain.10.c:0 "Rest in peace Sir"
 
+ mtg_usa_civil_war_fascists.32.t:0 "Civil War!"
+ mtg_usa_civil_war_fascists.32.desc:0 "You should not see this. This is a hidden event."
+ mtg_usa_civil_war_fascists.32.a:0 "Ok"
+
  bftb_turkey.78.t:0 "The Iraqi Government Wins the Civil War"
  bftb_turkey.78.desc:0 ""
  bftb_turkey.78.a:0 "Then we do this ourselves..."
