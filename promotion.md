@@ -14,4 +14,4 @@ Vanilla Tweaks is a lightweight mod that fixes base game bugs, adjusts game bala
 
 Discord: https://discord.gg/r9e7ggzGSe
 GitHub: https://github.com/Xaelorichero-02/Vanilla-Tweaks
-Workshop: ADD LINK AFTER UPLOAD
+Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=3606090934
