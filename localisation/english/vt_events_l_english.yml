@@ -52,6 +52,9 @@
  AFG_political_events.06.desc:0 ""
  AFG_political_events.06.a:0 "Boo"
 
+ GOE_RAJ_partition.1.t:0 "Resistance Increase"
+ GOE_RAJ_partition.1.desc:0 "This is a hidden event randomizing resistance growth."
+
  vt_turkey.1.t:0 "Submit or War!"
  vt_turkey.1.d:0 "The Turks have demanded that we cave to them without a fight."
  vt_turkey.1.a:0 "It's over, nothing can be done"
