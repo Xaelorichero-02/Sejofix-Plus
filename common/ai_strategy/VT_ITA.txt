@@ -4,6 +4,7 @@ ITA_SF_guarding_ports = {
 		always = yes
 	}
 	enable = {
+		original_tag = ITA
 		any_enemy_country = {
 			is_major = yes
 			OR = {
