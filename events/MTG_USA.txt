@@ -2315,8 +2315,8 @@ country_event = {
 country_event = {
 	id = mtg_usa_civil_war_democrats.32
 	hidden = yes
-	title = test_state.1.t
-	desc = test_state.1.d
+	title = mtg_usa_civil_war_democrats.32.t
+	desc = mtg_usa_civil_war_democrats.32.desc
 	
 	trigger = { 
 		original_tag = USA
@@ -2331,7 +2331,7 @@ country_event = {
 		
 	}
 	option = {
-		name = OK
+		name = mtg_usa_civil_war_democrats.32.a
 	}
 }
 #McArthur Offers Leadership

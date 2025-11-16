@@ -4,6 +4,9 @@
  mtg_usa_civil_war_fascists.32.t:0 "Civil War!"
  mtg_usa_civil_war_fascists.32.desc:0 "You should not see this. This is a hidden event."
  mtg_usa_civil_war_fascists.32.a:0 "Ok"
+ mtg_usa_civil_war_democrats.32.t:0 "Civil War!"
+ mtg_usa_civil_war_democrats.32.desc:0 "You should not see this. This is a hidden event."
+ mtg_usa_civil_war_democrats.32.a:0 "Ok"
 
  bftb_turkey.78.t:0 "The Iraqi Government Wins the Civil War"
  bftb_turkey.78.desc:0 ""
