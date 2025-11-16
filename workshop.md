@@ -22,6 +22,7 @@ Vanilla Tweaks is a volunteer based project and there is no dev structure. If yo
 [list]
     [*]Xaelor
     [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3083531552]Sejozwak[/url]
+    [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=947682822]Dickbong[/url]
 [/list]
 
 [url=https://discord.gg/r9e7ggzGSe][img]https://i.imgur.com/g7mnaUQ.png[/img][/url]
