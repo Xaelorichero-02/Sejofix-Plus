@@ -369,6 +369,9 @@ leader_traits = {
 			small_plane_airframe = {
 				air_range = 0.01
 			}
+			small_plane_naval_bomber_airframe = {
+				air_range = 0.1 naval_strike_attack = 0.1
+			}
 		}
 
 		ai_will_do = {
@@ -378,11 +381,6 @@ leader_traits = {
 	spirit_of_genghis = {
 		random = no
 		cavalry_attack_factor = 0.05
-		equipment_bonus = {
-			small_plane_naval_bomber_airframe = {
-				air_range = 0.1 naval_strike_attack = 0.1
-			}
-		}
 
 		ai_will_do = {
 			factor = 1
