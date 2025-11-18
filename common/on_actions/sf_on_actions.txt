@@ -6,9 +6,12 @@ on_actions = {
 			#ENG: Shadow Scheme Factories
 			if = {
 				limit = {
-					has_completed_focus = shadow_scheme_focus
+					any_country_with_original_tag = {
+						original_tag_to_check = ENG
+						has_completed_focus = shadow_scheme_focus
+					}
 				}
-				ENG = {
+				PREV = {
 					country_event = { id = britain.24 hours = 4 }
 				}
 			}
@@ -23,9 +26,12 @@ on_actions = {
 			if = {
 				limit = {
 					has_capitulated = yes
-					16 = { controller = { NOT = { original_tag = FRA } } }
+					any_country_with_original_tag = {
+						original_tag_to_check = FRA
+						16 = { controller = { NOT = { original_tag = THIS } } }
+					}
 				}
-				FRA = {
+				PREV = {
 					country_event = { id = france.16 hours = 4 }
 				}
 			}
