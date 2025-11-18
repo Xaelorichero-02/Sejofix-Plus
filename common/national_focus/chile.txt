@@ -5341,7 +5341,6 @@ focus_tree = {
 		ai_will_do = {
 			base = 1
 		}
-		available_if_capitulated = no
 		available = {
 			has_government = neutrality
 			is_subject = no
@@ -9409,7 +9408,6 @@ focus_tree = {
 		ai_will_do = {
 			base = 1.5
 		}
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL }
 
@@ -9475,7 +9473,6 @@ focus_tree = {
 			base = 1.5
 		}
 
-		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 
