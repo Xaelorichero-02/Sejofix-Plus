@@ -13075,16 +13075,16 @@ focus_tree = {
 			}
 
 			add_ace = {
-				name = Jorma
-				surname = Sarvanto
-				callsign = Zamba
+				name = "Jorma"
+				surname = "Sarvanto"
+				callsign = "Zamba"
 				type = fighter_unique
 			}
 
 			add_ace = {
-				name = Jorma
-				surname = Karhunen
-				callsign = Joppe
+				name = "Jorma"
+				surname = "Karhunen"
+				callsign = "Joppe"
 				type = fighter_good
 			}
 		}
@@ -13134,23 +13134,23 @@ focus_tree = {
 			}
 
 			add_ace = {
-				name = Ilmari
-				surname = Juutilainen
-				callsign = Illu
+				name = "Ilmari"
+				surname = "Juutilainen"
+				callsign = "Illu"
 				type = fighter_genius
 			}
 
 			add_ace = {
-				name = Hans
-				surname = Wind
-				callsign = Hasse
+				name = "Hans"
+				surname = "Wind"
+				callsign = "Hasse"
 				type = fighter_genius
 			}
 
 			add_ace = {
-				name = Oiva
-				surname = Tuominen
-				callsign = Oippa
+				name = "Oiva"
+				surname = "Tuominen"
+				callsign = "Oippa"
 				type = fighter_unique
 			}
 		}
